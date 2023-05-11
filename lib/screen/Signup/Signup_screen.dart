@@ -10,6 +10,6 @@ class signup extends StatelessWidget {
         child:
         Text("hello"),
       ),
-    )
+    );
   }
 }
