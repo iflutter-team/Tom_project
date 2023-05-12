@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/screen/Register/Register_screen.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'login_controller.dart';
@@ -37,7 +38,16 @@ Widget loginTextfiled1(){
     ),
   );
 }
-Widget logincheckbox() {
+Widget logincheckbox(){
+  return GetBuilder<LoginController>(
+    id: 'change',
+    builder: (controller) => Checkbox(
+      value: controller.Hello,
+      onChanged: (val){ return controller.change(val!);},
+    ),
+  );
+}
+Widget logincheck() {
   return Text(StringRes.loginchekbox,style: const TextStyle(fontSize: 15,color: Colors.black),);
 }
 Widget loginbutton() {
@@ -56,11 +66,11 @@ Widget loginpass() {
 Widget loginaccount() {
   return Text(StringRes.loginaccount,style: const TextStyle(fontSize: 15,color: Colors.black,),);
 }
-Widget loginRegister() {
+Widget loginRegister(){
   return GetBuilder<LoginController>(
-    builder: (controller) => TextButton(
-      onPressed:  controller.navigetToLoginscreen,
-      child: Text(StringRes.loginRegister, style: const TextStyle(color: Colors.green),),
-    ),
+      builder: (controller) => TextButton(
+          onPressed: ()=>controller.navigetToRegister(),
+          child: Text(StringRes.loginRegister)
+      )
   );
 }
