@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/screen/Register/Register_screen.dart';
 import 'package:tom_project/screen/login/login_controller.dart';
-import 'package:tom_project/screen/login/login_screen_widget.dart';
 import 'package:get/get.dart';
+
+import 'Login_screen_widget.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
