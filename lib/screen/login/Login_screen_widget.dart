@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/screen/Register/Register_screen.dart';
 import 'package:tom_project/utils/string_res.dart';
-import '../home/Home_screen.dart';
 import 'package:get/get.dart';
-
 import 'login_controller.dart';
 
 Widget logintitle() {
@@ -58,4 +55,12 @@ Widget loginpass() {
 }
 Widget loginaccount() {
   return Text(StringRes.loginaccount,style: const TextStyle(fontSize: 15,color: Colors.black,),);
+}
+Widget loginRegister() {
+  return GetBuilder<LoginController>(
+    builder: (controller) => TextButton(
+      onPressed:  controller.navigetToLoginscreen,
+      child: Text(StringRes.loginRegister, style: const TextStyle(color: Colors.green),),
+    ),
+  );
 }

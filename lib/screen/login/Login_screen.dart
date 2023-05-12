@@ -51,8 +51,9 @@ class _LoginState extends State<Login> {
               const SizedBox(height: 20,),
               Row(
                 children: [
-                  Padding(padding: EdgeInsets.only(left: 100)),
+                  const Padding(padding: EdgeInsets.only(left: 100)),
                   loginaccount(),
+                  loginRegister(),
                 ],
               ),
             ]
