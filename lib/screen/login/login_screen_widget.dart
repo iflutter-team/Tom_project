@@ -46,7 +46,7 @@ Widget logincheckbox() {
 Widget loginbutton() {
   return GetBuilder<LoginController>(
     builder: (controller) => MaterialButton(
-      minWidth: 300,
+      minWidth: 200,
       color: Colors.green,
       onPressed:  controller.navigetToLoginscreen,
       child: Text(StringRes.logintitle1, style: const TextStyle(color: Colors.white),),
