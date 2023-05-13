@@ -3,12 +3,14 @@ import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Register_controller.dart';
 
-Widget  Registertitle() {
-  return Text(StringRes.Registertitle,style: const TextStyle(fontSize: 20,color: Colors.green),
+Widget Registertitle() {
+  return Text(
+    StringRes.Registertitle,
+    style: const TextStyle(fontSize: 20, color: Colors.green),
   );
 }
 
-Widget RegisterTextfiled2(){
+Widget RegisterTextfiled2() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -23,7 +25,8 @@ Widget RegisterTextfiled2(){
     ),
   );
 }
-Widget RegisterTextfiled3(){
+
+Widget RegisterTextfiled3() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -38,7 +41,8 @@ Widget RegisterTextfiled3(){
     ),
   );
 }
-Widget RegisterTextfiled4(){
+
+Widget RegisterTextfiled4() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -53,7 +57,8 @@ Widget RegisterTextfiled4(){
     ),
   );
 }
-Widget RegisterTextfiled5(){
+
+Widget RegisterTextfiled5() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -68,7 +73,8 @@ Widget RegisterTextfiled5(){
     ),
   );
 }
-Widget RegisterTextfiled6(){
+
+Widget RegisterTextfiled6() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -83,7 +89,8 @@ Widget RegisterTextfiled6(){
     ),
   );
 }
-Widget RegisterTextfiled7(){
+
+Widget RegisterTextfiled7() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -98,38 +105,52 @@ Widget RegisterTextfiled7(){
     ),
   );
 }
-Widget Registercheckbox(){
+
+Widget Registercheckbox() {
   return GetBuilder<RegisterController>(
     id: 'right',
-      builder: (controller) => Checkbox(
-          value: controller.right,
-          onChanged: (val){ return controller.change(val!);},
-      ),
-  );
-}
-Widget  Registercheck() {
-  return Text(StringRes.Registerchekbox,style: const TextStyle(fontSize: 15,color: Colors.green,fontWeight: FontWeight.bold),
-  );
-}
-Widget Registernext() {
-  return GetBuilder<RegisterController>(
-    builder: (controller) => MaterialButton(
-      minWidth: 300,
-        color: Colors.green,
-        onPressed: controller.navigetToRegister,
-        child: Text(StringRes.Register1,)
+    builder: (controller) => Checkbox(
+      value: controller.right,
+      onChanged: (val) {
+        return controller.change(val!);
+      },
     ),
   );
 }
-Widget  Registeraccount() {
-  return Text(StringRes.Registeraccount,style: const TextStyle(fontSize: 15,color: Colors.black,),
+
+Widget Registercheck() {
+  return Text(
+    StringRes.Registerchekbox,
+    style: const TextStyle(
+        fontSize: 15, color: Colors.green, fontWeight: FontWeight.bold),
   );
 }
-Widget RegisterSignup(){
+
+Widget Registernext() {
+  return GetBuilder<RegisterController>(
+    builder: (controller) => MaterialButton(
+        minWidth: 300,
+        color: Colors.green,
+        onPressed: controller.navigetToRegister,
+        child: Text(
+          StringRes.Register1,
+        )),
+  );
+}
+
+Widget Registeraccount() {
+  return Text(
+    StringRes.Registeraccount,
+    style: const TextStyle(
+      fontSize: 15,
+      color: Colors.black,
+    ),
+  );
+}
+
+Widget RegisterSignup() {
   return GetBuilder<RegisterController>(
       builder: (controller) => TextButton(
-          onPressed: ()=>controller.navigetToRegisterhello(),
-          child: Text(StringRes.Registersignup)
-      )
-  );
+          onPressed: () => controller.navigetToRegisterhello(),
+          child: Text(StringRes.Registersignup)));
 }
