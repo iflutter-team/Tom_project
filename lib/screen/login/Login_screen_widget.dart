@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/screen/Register/Register_screen.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Login_controller.dart';
