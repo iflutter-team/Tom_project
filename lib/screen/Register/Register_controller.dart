@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:tom_project/screen/home/Home_screen.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
 
-class RegisterController extends GetxController{
+class RegisterController extends GetxController {
   final TextEditingController namecontroller = TextEditingController();
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController phonecontroller = TextEditingController();
@@ -11,20 +11,21 @@ class RegisterController extends GetxController{
   final TextEditingController confirmpasscontroller = TextEditingController();
   final TextEditingController Idcontroller = TextEditingController();
 
-
   void navigetToRegister() {
-    Get.to(() =>  Homescreen(),
+    Get.to(
+      () => Homescreen(),
     );
   }
+
   void navigetToRegisterhello() {
-    Get.to(() =>  Login(),
+    Get.to(
+      () => Login(),
     );
   }
 
   bool right = false;
-  void change(bool val){
+  void change(bool val) {
     right = val;
     update(["right"]);
   }
-
 }

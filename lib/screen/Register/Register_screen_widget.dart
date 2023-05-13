@@ -16,7 +16,7 @@ Widget RegisterTextfiled2(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText2title,
         hintText: StringRes.hintText2title,
       ),
@@ -31,7 +31,7 @@ Widget RegisterTextfiled3(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText3title,
         hintText: StringRes.hintText3title,
       ),
@@ -46,7 +46,7 @@ Widget RegisterTextfiled4(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText4title,
         hintText: StringRes.hintText4title,
       ),
@@ -61,7 +61,7 @@ Widget RegisterTextfiled5(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText5title,
         hintText: StringRes.hintText5title,
       ),
@@ -76,7 +76,7 @@ Widget RegisterTextfiled6(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText6title,
         hintText: StringRes.hintText6title,
       ),
@@ -91,7 +91,7 @@ Widget RegisterTextfiled7(){
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText7title,
         hintText: StringRes.hintText7title,
       ),

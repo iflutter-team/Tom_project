@@ -25,7 +25,7 @@ class _LoginState extends State<Login> {
         },
         child: Stack(
           children: [
-            Positioned(
+            const Positioned(
               bottom: 650,
               right: 200,
               child: CircleAvatar(
@@ -33,7 +33,7 @@ class _LoginState extends State<Login> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            Positioned(
+            const Positioned(
               bottom: 680,
               left: 300,
               child: CircleAvatar(
@@ -41,7 +41,7 @@ class _LoginState extends State<Login> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            Positioned(
+            const Positioned(
               bottom: 400,
               left: 330,
               child: CircleAvatar(
@@ -49,7 +49,7 @@ class _LoginState extends State<Login> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            Positioned(
+            const Positioned(
               bottom: 150,
               right: 350,
               child: CircleAvatar(
@@ -57,7 +57,7 @@ class _LoginState extends State<Login> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            Positioned(
+            const Positioned(
               bottom: -130,
               left: 300,
               child: CircleAvatar(
@@ -69,19 +69,19 @@ class _LoginState extends State<Login> {
               child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image(
+                    const Image(
                       image: AssetImage("assets/images/login.png"),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 25,
                     ),
                     logintitle(),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     loginTextfiled(),
                     loginTextfiled1(),
-                    SizedBox(
+                    const SizedBox(
                       width: 100,
                     ),
                     Row(
@@ -90,13 +90,13 @@ class _LoginState extends State<Login> {
                         logincheck(),
                       ],
                     ),
-                    SizedBox(height: 15),
+                    const SizedBox(height: 15),
                     loginbutton(),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     loginpass(),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     Row(
