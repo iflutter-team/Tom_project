@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/screen/Registration%20page%202/Registration_controller.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
-import 'Register_controller.dart';
 
-Widget Registertitle() {
+Widget Registrationtitle() {
   return Text(
-    StringRes.Registertitle,
+    StringRes.Registerationtitle,
     style: const TextStyle(fontSize: 20, color: Colors.green),
   );
 }
-
-Widget RegisterTextfiled2() {
+Widget RegistrationTextfiled8() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -19,14 +18,13 @@ Widget RegisterTextfiled2() {
           borderRadius: BorderRadius.circular(10),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText2title,
-        hintText: StringRes.hintText2title,
+        labelText: StringRes.labelText8title,
+        hintText: StringRes.hintText8title,
       ),
     ),
   );
 }
-
-Widget RegisterTextfiled3() {
+Widget RegistrationTextfiled9() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -35,14 +33,13 @@ Widget RegisterTextfiled3() {
           borderRadius: BorderRadius.circular(10),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText3title,
-        hintText: StringRes.hintText3title,
+        labelText: StringRes.labelText9title,
+        hintText: StringRes.hintText9title,
       ),
     ),
   );
 }
-
-Widget RegisterTextfiled4() {
+Widget RegistrationTextfiled10() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -50,15 +47,14 @@ Widget RegisterTextfiled4() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText4title,
-        hintText: StringRes.hintText4title,
+        prefixIcon: const Icon(Icons.pin_drop_outlined),
+        labelText: StringRes.labelText10title,
+        hintText: StringRes.hintText10title,
       ),
     ),
   );
 }
-
-Widget RegisterTextfiled5() {
+Widget RegistrationTextfiled11() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -66,15 +62,14 @@ Widget RegisterTextfiled5() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText5title,
-        hintText: StringRes.hintText5title,
+        prefixIcon: const Icon(Icons.pin),
+        labelText: StringRes.labelText11title,
+        hintText: StringRes.hintText11title,
       ),
     ),
   );
 }
-
-Widget RegisterTextfiled6() {
+Widget RegistrationTextfiled12() {
   return Padding(
     padding: const EdgeInsets.all(10),
     child: TextField(
@@ -82,66 +77,46 @@ Widget RegisterTextfiled6() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(10),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText6title,
-        hintText: StringRes.hintText6title,
+        prefixIcon: const Icon(Icons.pages_outlined),
+        labelText: StringRes.labelText12title,
+        hintText: StringRes.hintText12title,
       ),
     ),
   );
 }
-
-Widget RegisterTextfiled7() {
-  return Padding(
-    padding: const EdgeInsets.all(10),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
-        ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
-        labelText: StringRes.labelText7title,
-        hintText: StringRes.hintText7title,
-      ),
-    ),
-  );
-}
-
-Widget Registercheckbox() {
-  return GetBuilder<RegisterController>(
-    id: 'right',
+Widget Registrationcheckbox() {
+  return GetBuilder<RegistrationController>(
+    id: 'check',
     builder: (controller) => Checkbox(
-      value: controller.right,
+      value: controller.check,
       onChanged: (val) {
-        return controller.change(val!);
+        return controller.value(val!);
       },
     ),
   );
 }
-
-Widget Registercheck() {
+Widget Registrationcheck() {
   return Text(
-    StringRes.Registerchekbox,
+    StringRes.Registerationchekbox,
     style: const TextStyle(
         fontSize: 15, color: Colors.black, fontWeight: FontWeight.normal),
   );
 }
-
-Widget Registernext() {
-  return GetBuilder<RegisterController>(
+Widget RegistrationrSign() {
+  return GetBuilder<RegistrationController>(
     builder: (controller) => MaterialButton(
         minWidth: 300,
         color: Colors.green,
-        onPressed: controller.navigetToRegister,
+        onPressed: controller.navigetToRegistration,
         child: Text(
-          StringRes.Register1,
+          StringRes.Registeration1,
           style: TextStyle(color: Colors.white),
         )),
   );
 }
-
-Widget Registeraccount() {
+Widget Registrationaccount() {
   return Text(
-    StringRes.Registeraccount,
+    StringRes.Registerationaccount,
     style: const TextStyle(
       fontSize: 15,
       color: Colors.black,
@@ -149,9 +124,10 @@ Widget Registeraccount() {
   );
 }
 
-Widget RegisterLogin() {
-  return GetBuilder<RegisterController>(
+Widget RegistrationLogin() {
+  return GetBuilder<RegistrationController>(
       builder: (controller) => TextButton(
           onPressed: () => controller.navigetToRegistrationLogin(),
-          child: Text(StringRes.RegisterLogin)));
+          child: Text(StringRes.RegisterationLogin)));
 }
+

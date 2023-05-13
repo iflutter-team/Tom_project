@@ -98,7 +98,7 @@ class _RegisterscreenState extends State<Registerscreen> {
                         children: [
                           Padding(padding: EdgeInsets.only(left: 100)),
                           Registeraccount(),
-                          RegisterSignup(),
+                          RegisterLogin(),
                         ],
                       ),
                     ],
