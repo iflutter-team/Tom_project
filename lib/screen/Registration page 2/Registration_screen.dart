@@ -3,17 +3,14 @@ import 'package:tom_project/screen/Registration%20page%202/Registration_controll
 import 'package:tom_project/screen/Registration%20page%202/Registration_screen_widget.dart';
 import 'package:get/get.dart';
 
-class Registration extends StatefulWidget {
-  const Registration({Key? key}) : super(key: key);
+class Registration extends StatelessWidget {
+  const Registration({super.key});
 
-  @override
-  State<Registration> createState() => _RegistrationState();
-}
-
-class _RegistrationState extends State<Registration> {
   @override
   Widget build(BuildContext context) {
-    Get.put(RegistrationController(),);
+    Get.put(
+      RegistrationController(),
+    );
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: GestureDetector(
@@ -46,15 +43,23 @@ class _RegistrationState extends State<Registration> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            const  Positioned(
-              bottom: 150,
+            const Positioned(
+              bottom: 320,
               right: 350,
               child: CircleAvatar(
-                radius: 100,
+                radius: 40,
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-            const  Positioned(
+            const Positioned(
+              bottom: 40,
+              right: 350,
+              child: CircleAvatar(
+                radius: 40,
+                backgroundColor: Color(0xFF87b988),
+              ),
+            ),
+            const Positioned(
               bottom: -130,
               left: 300,
               child: CircleAvatar(
@@ -62,38 +67,41 @@ class _RegistrationState extends State<Registration> {
                 backgroundColor: Color(0xFF87b988),
               ),
             ),
-          SafeArea(
-            child: Center(
-             child: SingleChildScrollView(
-               child: Column(
-                 mainAxisAlignment: MainAxisAlignment.center,
-                 children: [
-                   const Image(image: AssetImage("assets/images/Registration.png"),),
-                   RegistrationTextfiled8(),
-                   RegistrationTextfiled9(),
-                   RegistrationTextfiled10(),
-                   RegistrationTextfiled11(),
-                   RegistrationTextfiled12(),
-                   Row(
-                     children: [
-                       Registrationcheckbox(),
-                       Registrationcheck(),
-                     ],
-                   ),
-                   RegistrationrSign(),
-                   Row(
-                     children: [
-                       const Padding(padding: EdgeInsets.only(left: 100)),
-                       Registrationaccount(),
-                       RegistrationLogin(),
-                     ],
-                   ),
-                 ],
-               ),
-             ),
+            SafeArea(
+              child: Center(
+                child: SingleChildScrollView(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Image(
+                        image: AssetImage("assets/images/Registration.png"),
+                      ),
+                      Registrationtitle(),
+                      RegistrationTextfiled8(),
+                      RegistrationTextfiled9(),
+                      RegistrationTextfiled10(),
+                      RegistrationTextfiled11(),
+                      RegistrationTextfiled12(),
+                      Row(
+                        children: [
+                          Registrationcheckbox(),
+                          Registrationcheck(),
+                        ],
+                      ),
+                      RegistrationrSign(),
+                      Row(
+                        children: [
+                          const Padding(padding: EdgeInsets.only(left: 100)),
+                          Registrationaccount(),
+                          RegistrationLogin(),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ),
-          ),
-    ],
+          ],
         ),
       ),
     );

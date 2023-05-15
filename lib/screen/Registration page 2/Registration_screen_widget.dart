@@ -6,9 +6,10 @@ import 'package:get/get.dart';
 Widget Registrationtitle() {
   return Text(
     StringRes.Registerationtitle,
-    style: const TextStyle(fontSize: 20, color: Colors.green),
+    style: const TextStyle(fontSize: 25, color: Colors.green),
   );
 }
+
 Widget RegistrationTextfiled8() {
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -24,6 +25,7 @@ Widget RegistrationTextfiled8() {
     ),
   );
 }
+
 Widget RegistrationTextfiled9() {
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -39,6 +41,7 @@ Widget RegistrationTextfiled9() {
     ),
   );
 }
+
 Widget RegistrationTextfiled10() {
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -54,6 +57,7 @@ Widget RegistrationTextfiled10() {
     ),
   );
 }
+
 Widget RegistrationTextfiled11() {
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -69,6 +73,7 @@ Widget RegistrationTextfiled11() {
     ),
   );
 }
+
 Widget RegistrationTextfiled12() {
   return Padding(
     padding: const EdgeInsets.all(10),
@@ -84,6 +89,7 @@ Widget RegistrationTextfiled12() {
     ),
   );
 }
+
 Widget Registrationcheckbox() {
   return GetBuilder<RegistrationController>(
     id: 'check',
@@ -95,6 +101,7 @@ Widget Registrationcheckbox() {
     ),
   );
 }
+
 Widget Registrationcheck() {
   return Text(
     StringRes.Registerationchekbox,
@@ -102,6 +109,7 @@ Widget Registrationcheck() {
         fontSize: 15, color: Colors.black, fontWeight: FontWeight.normal),
   );
 }
+
 Widget RegistrationrSign() {
   return GetBuilder<RegistrationController>(
     builder: (controller) => MaterialButton(
@@ -114,6 +122,7 @@ Widget RegistrationrSign() {
         )),
   );
 }
+
 Widget Registrationaccount() {
   return Text(
     StringRes.Registerationaccount,
@@ -130,4 +139,3 @@ Widget RegistrationLogin() {
           onPressed: () => controller.navigetToRegistrationLogin(),
           child: Text(StringRes.RegisterationLogin)));
 }
-

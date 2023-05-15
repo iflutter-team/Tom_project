@@ -1,18 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/login/Login_controller.dart';
 import 'package:get/get.dart';
-
 import 'Login_screen_widget.dart';
 
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
-
-  @override
-  State<Login> createState() => _LoginState();
-}
-
-class _LoginState extends State<Login> {
-  bool hello = false;
+class Login extends StatelessWidget {
+  const Login({super.key});
 
   @override
   Widget build(BuildContext context) {

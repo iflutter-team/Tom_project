@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tom_project/screen/Registration%20page%202/Registration_screen.dart';
+import 'package:tom_project/screen/home/Home_screen.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
 
 class RegistrationController extends GetxController {
@@ -12,15 +12,15 @@ class RegistrationController extends GetxController {
 
   void navigetToRegistration() {
     Get.to(
-          () => Registration(),
-    );
-  }
-  navigetToRegistrationLogin() {
-    Get.to(
-          () => Login(),
+      () => Homescreen(),
     );
   }
 
+  navigetToRegistrationLogin() {
+    Get.to(
+      () => Login(),
+    );
+  }
 
   bool check = false;
   void value(bool val) {

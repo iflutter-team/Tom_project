@@ -1,4 +1,4 @@
-class StringRes{
+class StringRes {
   ////----------------------------Login screen---------------------------////
   static String logintitle = "Log in to continue";
   static String logintitle1 = "Log in";
@@ -49,4 +49,9 @@ class StringRes{
   static String labelText12title = "Certificate";
   static String Registeration2 = "Browse";
 
+////-------------------------under screen---------------------------////
+  static String undertext = "Your Profile under review.it's take 2";
+  static String undertext1 = "working days to verify";
+  static String underwebsite = "www.tomtheorganicmart.com";
+  static String under = "www.tomtheorganicmart.com";
 }
