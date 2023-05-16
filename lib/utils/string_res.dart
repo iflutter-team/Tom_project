@@ -54,4 +54,5 @@ class StringRes {
   static String undertext1 = "working days to verify";
   static String underwebsite = "www.tomtheorganicmart.com";
   static String under = "www.tomtheorganicmart.com";
+  static String contact = "Contact";
 }

@@ -114,7 +114,7 @@ Widget RegistrationrSign() {
   return GetBuilder<RegistrationController>(
     builder: (controller) => MaterialButton(
         minWidth: 300,
-        color: Colors.green,
+        color: Color(0xFF227c3e),
         onPressed: controller.navigetToRegistration,
         child: Text(
           StringRes.Registeration1,

@@ -14,17 +14,32 @@ class _FlashState extends State<Flash> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 3), (){
-      Navigator.pushReplacement(
+      const Duration(seconds: 3),
+      () {
+        Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const Login(),),);
-    },);
+          MaterialPageRoute(
+            builder: (context) => const Login(),
+          ),
+        );
+      },
+    );
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image.asset('assets/images/splash screen.png'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset('assets/images/splash screen.png'),
+            SizedBox(
+              height: 20,
+            ),
+            CircularProgressIndicator(),
+          ],
+        ),
       ),
     );
   }

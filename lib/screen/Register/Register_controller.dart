@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Registration%20page%202/Registration_screen.dart';
-import 'package:tom_project/screen/home/Home_screen.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
 
 class RegisterController extends GetxController {

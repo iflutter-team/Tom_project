@@ -66,7 +66,7 @@ Widget loginbutton() {
   return GetBuilder<LoginController>(
     builder: (controller) => MaterialButton(
       minWidth: 300,
-      color: Colors.green,
+      color: Color(0xFF227c3e),
       onPressed: controller.navigetToLoginscreen,
       child: Text(
         StringRes.logintitle1,

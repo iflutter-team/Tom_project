@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tom_project/screen/home/Home_screen.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
+import 'package:tom_project/screen/under%20review/Under_screen.dart';
 
 class RegistrationController extends GetxController {
   final TextEditingController GSTcontroller = TextEditingController();
@@ -12,7 +12,7 @@ class RegistrationController extends GetxController {
 
   void navigetToRegistration() {
     Get.to(
-      () => Homescreen(),
+      () => underscreen(),
     );
   }
 
