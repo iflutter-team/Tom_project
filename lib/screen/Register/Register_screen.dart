@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/screen/Register/Register_controller.dart';
+import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/screen/Register/Register_screen_widget.dart';
 import 'package:get/get.dart';
+
+import 'Register_controller.dart';
 
 class Registerscreen extends StatelessWidget {
   const Registerscreen({super.key});
@@ -22,7 +24,7 @@ class Registerscreen extends StatelessWidget {
               right: 200,
               child: CircleAvatar(
                 radius: 300,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -30,7 +32,7 @@ class Registerscreen extends StatelessWidget {
               left: 300,
               child: CircleAvatar(
                 radius: 20,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -38,7 +40,7 @@ class Registerscreen extends StatelessWidget {
               left: 330,
               child: CircleAvatar(
                 radius: 100,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -46,7 +48,7 @@ class Registerscreen extends StatelessWidget {
               right: 350,
               child: CircleAvatar(
                 radius: 40,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -54,7 +56,7 @@ class Registerscreen extends StatelessWidget {
               right: 350,
               child: CircleAvatar(
                 radius: 40,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -62,7 +64,7 @@ class Registerscreen extends StatelessWidget {
               left: 300,
               child: CircleAvatar(
                 radius: 150,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             Center(

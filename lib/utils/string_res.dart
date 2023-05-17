@@ -55,4 +55,12 @@ class StringRes {
   static String underwebsite = "www.tomtheorganicmart.com";
   static String under = "www.tomtheorganicmart.com";
   static String contact = "Contact";
+
+  ////-------------------------forgot screen---------------------------////
+  static String Forgottitle = "Forgot Password";
+  static String hintText13title = "Your Phone Number";
+  static String labelText13title = "Your Phone Number";
+  static String texttitle = "Send OTP";
+  static String Forgotaccount = "have a account?";
+  static String ForgotLogin = "Log in";
 }

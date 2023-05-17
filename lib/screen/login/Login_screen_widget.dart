@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Login_controller.dart';
@@ -76,14 +77,6 @@ Widget loginbutton() {
   );
 }
 
-Widget loginpass() {
-  return Text(
-    StringRes.loginpass,
-    style: const TextStyle(
-        fontSize: 15, color: Colors.green, fontWeight: FontWeight.bold),
-  );
-}
-
 Widget loginaccount() {
   return Text(
     StringRes.loginaccount,
@@ -99,4 +92,10 @@ Widget loginRegister() {
       builder: (controller) => TextButton(
           onPressed: () => controller.navigetToRegister(),
           child: Text(StringRes.loginRegister)));
+}
+
+Widget loginpass() {
+  return GetBuilder<LoginController>(
+      builder: (controller) => TextButton(
+          onPressed: () => Get.to(Forgot()), child: Text(StringRes.loginpass)));
 }

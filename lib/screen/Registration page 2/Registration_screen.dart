@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tom_project/screen/Registration%20page%202/Registration_controller.dart';
 import 'package:tom_project/screen/Registration%20page%202/Registration_screen_widget.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/utils/color_res.dart';
 
 class Registration extends StatelessWidget {
   const Registration({super.key});
@@ -24,7 +25,7 @@ class Registration extends StatelessWidget {
               right: 200,
               child: CircleAvatar(
                 radius: 300,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -32,7 +33,7 @@ class Registration extends StatelessWidget {
               left: 300,
               child: CircleAvatar(
                 radius: 20,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -40,7 +41,7 @@ class Registration extends StatelessWidget {
               left: 330,
               child: CircleAvatar(
                 radius: 100,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -48,7 +49,7 @@ class Registration extends StatelessWidget {
               right: 350,
               child: CircleAvatar(
                 radius: 40,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -56,7 +57,7 @@ class Registration extends StatelessWidget {
               right: 350,
               child: CircleAvatar(
                 radius: 40,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             const Positioned(
@@ -64,7 +65,7 @@ class Registration extends StatelessWidget {
               left: 300,
               child: CircleAvatar(
                 radius: 150,
-                backgroundColor: Color(0xFF87b988),
+                backgroundColor: ColorsRes.greenColor,
               ),
             ),
             SafeArea(
