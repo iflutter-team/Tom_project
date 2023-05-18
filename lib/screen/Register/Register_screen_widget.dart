@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Register_controller.dart';
+
+Widget Imageregister() {
+  return Image(
+    image: AssetImage(ImageRes.register),
+  );
+}
 
 Widget Registertitle() {
   return Text(
@@ -12,11 +19,11 @@ Widget Registertitle() {
 
 Widget RegisterTextfiled2() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText2title,
@@ -28,11 +35,11 @@ Widget RegisterTextfiled2() {
 
 Widget RegisterTextfiled3() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText3title,
@@ -44,11 +51,11 @@ Widget RegisterTextfiled3() {
 
 Widget RegisterTextfiled4() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText4title,
@@ -60,11 +67,11 @@ Widget RegisterTextfiled4() {
 
 Widget RegisterTextfiled5() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText5title,
@@ -76,11 +83,11 @@ Widget RegisterTextfiled5() {
 
 Widget RegisterTextfiled6() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText6title,
@@ -92,11 +99,11 @@ Widget RegisterTextfiled6() {
 
 Widget RegisterTextfiled7() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText7title,

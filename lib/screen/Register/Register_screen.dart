@@ -72,9 +72,7 @@ class Registerscreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image(
-                      image: AssetImage("assets/images/Register.png"),
-                    ),
+                    Imageregister(),
                     Registertitle(),
                     SizedBox(
                       height: 10,

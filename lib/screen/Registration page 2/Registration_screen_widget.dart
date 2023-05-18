@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/Registration%20page%202/Registration_controller.dart';
+import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
+
+Widget Imageregisteration() {
+  return Image(
+    image: AssetImage(ImageRes.registeration),
+  );
+}
 
 Widget Registrationtitle() {
   return Text(
@@ -12,11 +19,11 @@ Widget Registrationtitle() {
 
 Widget RegistrationTextfiled8() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText8title,
@@ -28,11 +35,11 @@ Widget RegistrationTextfiled8() {
 
 Widget RegistrationTextfiled9() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.account_circle_outlined),
         labelText: StringRes.labelText9title,
@@ -44,11 +51,11 @@ Widget RegistrationTextfiled9() {
 
 Widget RegistrationTextfiled10() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.pin_drop_outlined),
         labelText: StringRes.labelText10title,
@@ -60,11 +67,11 @@ Widget RegistrationTextfiled10() {
 
 Widget RegistrationTextfiled11() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.pin),
         labelText: StringRes.labelText11title,
@@ -76,11 +83,11 @@ Widget RegistrationTextfiled11() {
 
 Widget RegistrationTextfiled12() {
   return Padding(
-    padding: const EdgeInsets.all(10),
+    padding: const EdgeInsets.all(15),
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(10),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.pages_outlined),
         labelText: StringRes.labelText12title,

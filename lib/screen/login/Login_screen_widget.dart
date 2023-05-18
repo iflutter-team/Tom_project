@@ -1,8 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
+import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Login_controller.dart';
+
+Widget Imagelogin() {
+  return Image(
+    image: AssetImage(ImageRes.login),
+  );
+}
 
 Widget logintitle() {
   return Text(
@@ -18,7 +25,7 @@ Widget loginTextfiled() {
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.mail),
         labelText: StringRes.labelTexttitle,
@@ -34,7 +41,7 @@ Widget loginTextfiled1() {
     child: TextField(
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(8),
         ),
         prefixIcon: const Icon(Icons.lock),
         labelText: StringRes.labelText1title,

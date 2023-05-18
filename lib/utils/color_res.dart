@@ -12,4 +12,6 @@ class ColorsRes {
   static const signup1greenColor = Color(0xFF87b988);
   static const signup1blackcolor = Colors.black;
   static const signup1green1color = Colors.green;
+
+  static const green2color = Color(0xFF227c3e);
 }

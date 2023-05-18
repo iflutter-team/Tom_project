@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
+import 'package:tom_project/screen/splash%20screen/Splash_screen_widget.dart';
 
 class Flash extends StatefulWidget {
   const Flash({Key? key}) : super(key: key);
@@ -33,7 +34,7 @@ class _FlashState extends State<Flash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset('assets/images/splash screen.png'),
+            Imagesplash(),
             SizedBox(
               height: 20,
             ),

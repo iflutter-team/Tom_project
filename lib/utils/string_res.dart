@@ -63,4 +63,22 @@ class StringRes {
   static String texttitle = "Send OTP";
   static String Forgotaccount = "have a account?";
   static String ForgotLogin = "Log in";
+
+  ////-------------------------forgot1 screen---------------------------////
+  static String Forgottitle1 = "Forgot Password";
+  static String hintText14title = "Enter OTP";
+  static String labelText14title = "Enter OTP";
+  static String texttitle1 = "Submit";
+  static String Forgotaccount1 = "have a account?";
+  static String ForgotLogin1 = "Log in";
+
+  ////-------------------------forgot2 screen---------------------------////
+  static String Forgottitle2 = "New Password";
+  static String hintText15title = "Enter New Password";
+  static String labelText15title = "Enter New Password";
+  static String hintText16title = "Confirm Password";
+  static String labelText16title = "Confirm Password";
+  static String texttitle2 = "Save";
+  static String Forgotaccount2 = "have a account?";
+  static String ForgotLogin2 = "Log in";
 }

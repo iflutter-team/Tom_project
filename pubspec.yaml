@@ -73,7 +73,9 @@ flutter:
     - assets/images/Registration.png
     - assets/images/under review.png
     - assets/images/under review1.png
-    - assets/images/Forgot pass - 2.png
+    - assets/images/Forgot pass.png
+    - assets/images/Forgot pass1.png
+    - assets/images/Forgot pass2.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

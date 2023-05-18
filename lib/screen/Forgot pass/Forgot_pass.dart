@@ -14,9 +14,7 @@ class Forgot extends StatelessWidget {
           child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image(
-            image: AssetImage("assets/images/Forgot pass - 2.png"),
-          ),
+          Imageforgot(),
           SizedBox(
             height: 20,
           ),

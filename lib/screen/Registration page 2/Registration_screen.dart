@@ -74,9 +74,7 @@ class Registration extends StatelessWidget {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const Image(
-                        image: AssetImage("assets/images/Registration.png"),
-                      ),
+                      Imageregisteration(),
                       Registrationtitle(),
                       RegistrationTextfiled8(),
                       RegistrationTextfiled9(),
