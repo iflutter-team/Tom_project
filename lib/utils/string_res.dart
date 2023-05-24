@@ -81,4 +81,68 @@ class StringRes {
   static String texttitle2 = "Save";
   static String Forgotaccount2 = "have a account?";
   static String ForgotLogin2 = "Log in";
+
+  ////-------------------------Home screen---------------------------////
+  static String TextAone = "Aone Fruit Store";
+  static String Textview = "Overview";
+  static String Textweek = "Last Week";
+  static String Textorder = "Orders";
+  static String Textorder1 = "56";
+  static String Textsales = "Total Sales";
+  static String Textsales1 = "\$5467.83";
+  static String Textstore = "Store View";
+  static String Textstore1 = "378";
+  static String Texttotal = "Total Products";
+  static String Texttotal1 = "1,000";
+  static String Textactive = "Active Orders";
+  static String Textall = "View All";
+
+  static String Textorders = "Order #3437998";
+  static String Texttime = "04:1PM";
+  static String Textdriver = "Driver:";
+  static String Textadd = "Ankur Patel,+91 1234567890";
+  static String Textcod = "COD";
+  static String Textvieworder = "View Order";
+
+  static String Textorders1 = "Order #3437998";
+  static String Texttime1 = "04:1PM";
+  static String Textdriver1 = "Driver:";
+  static String Textadd1 = "Ankur Patel,+91 1234567890";
+  static String Textcod1 = "COD";
+  static String Textvieworder1 = "View Order";
+
+  static String Textorders2 = "Order #3437998";
+  static String Texttime2 = "04:1PM";
+  static String Textdriver2 = "Driver:";
+  static String Textadd2 = "Ankur Patel,+91 1234567890";
+  static String Textcod2 = "COD";
+  static String Textvieworder2 = "View Order";
+
+  static String Textorders3 = "Order #3437998";
+  static String Texttime3 = "04:1PM";
+  static String Textdriver3 = "Driver:";
+  static String Textadd3 = "Ankur Patel,+91 1234567890";
+  static String Textcod3 = "COD";
+  static String Textvieworder3 = "View Order";
+
+  static String Textorders4 = "Order #3437998";
+  static String Texttime4 = "04:1PM";
+  static String Textdriver4 = "Driver:";
+  static String Textadd4 = "Ankur Patel,+91 1234567890";
+  static String Textcod4 = "COD";
+  static String Textvieworder4 = "View Order";
+
+  static String Textorders5 = "Order #3437998";
+  static String Texttime5 = "04:1PM";
+  static String Textdriver5 = "Driver:";
+  static String Textadd5 = "Ankur Patel,+91 1234567890";
+  static String Textcod5 = "COD";
+  static String Textvieworder5 = "View Order";
+
+  static String Textorders6 = "Order #3437998";
+  static String Texttime6 = "04:1PM";
+  static String Textdriver6 = "Driver:";
+  static String Textadd6 = "Ankur Patel,+91 1234567890";
+  static String Textcod6 = "COD";
+  static String Textvieworder6 = "View Order";
 }

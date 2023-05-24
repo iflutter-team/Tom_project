@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/screen/splash%20screen/Splash_screen.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/screen/home/BottomNavigationBar.dart';
 
 main() {
   runApp(GetMaterialApp(
     theme: ThemeData(primarySwatch: Colors.green),
-    home: const Flash(),
+    home: Bottomhello(),
     debugShowCheckedModeBanner: false,
   ));
 }
