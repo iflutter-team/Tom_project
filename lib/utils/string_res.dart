@@ -145,4 +145,18 @@ class StringRes {
   static String Textadd6 = "Ankur Patel,+91 1234567890";
   static String Textcod6 = "COD";
   static String Textvieworder6 = "View Order";
+
+  ////-------------------------product screen---------------------------////
+  static String TextSearch = "Search....";
+  static String Textlabel = "Search";
+  static String Textproducts = "Products";
+  static String Textcategory = "Category";
+  static String Textinstock = "In stock";
+  static String Textoff = "%6 off";
+  static String Textmango = "Mango";
+  static String Textpr = "99.11";
+  static String Textedit = "Edit";
+  static String TextDelete = "Delete";
+  static String Textoutofstock = "out of stock";
+  static String Textproductadd = "Add Product";
 }

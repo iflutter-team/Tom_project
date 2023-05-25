@@ -18,4 +18,6 @@ class ColorsRes {
   static const whitecolor = Colors.white;
   static const white2color = Color(0xFFf5f5f5);
   static const green3color = Color(0xFF237c3e);
+  static const searchcolor = Color(0xFF67bb6a);
+  static const addcolor = Color(0xFF67bb6a);
 }

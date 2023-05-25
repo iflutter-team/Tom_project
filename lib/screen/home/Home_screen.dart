@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/screen/home/Home_screen_widget.dart';
-import 'package:tom_project/utils/color_res.dart';
 
 class Homescreen extends StatelessWidget {
   const Homescreen({Key? key}) : super(key: key);
@@ -13,15 +12,6 @@ class Homescreen extends StatelessWidget {
       Homecontroller(),
     );
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: ColorsRes.whitecolor,
-        leading: appbarIcon(),
-        title: appbarimage(),
-        actions: [
-          appbarIcon2(),
-          appbarIcon3(),
-        ],
-      ),
       body: Column(
         children: [
           Listtile(),
@@ -71,7 +61,6 @@ class Homescreen extends StatelessWidget {
           Homelist(),
         ],
       ),
-      //bottomNavigationBar: Homenavigatoer(),
     );
   }
 }

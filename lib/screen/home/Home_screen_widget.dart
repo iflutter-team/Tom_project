@@ -1,43 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
-import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
-
-Widget appbarimage() {
-  return Image.asset(
-    ImageRes.home,
-    scale: 2.0,
-  );
-}
-
-Widget appbarIcon() {
-  return IconButton(
-    onPressed: () {},
-    icon: Icon(Icons.menu, color: ColorsRes.green1color),
-  );
-}
-
-Widget appbarIcon2() {
-  return IconButton(
-    onPressed: () {},
-    icon: Icon(
-      Icons.language,
-      color: ColorsRes.green1color,
-    ),
-  );
-}
-
-Widget appbarIcon3() {
-  return IconButton(
-    onPressed: () {},
-    icon: Icon(
-      Icons.notifications_outlined,
-      color: ColorsRes.green1color,
-    ),
-  );
-}
 
 Widget Listtile() {
   return GetBuilder<Homecontroller>(
