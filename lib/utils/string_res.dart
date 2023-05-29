@@ -159,4 +159,5 @@ class StringRes {
   static String TextDelete = "Delete";
   static String Textoutofstock = "out of stock";
   static String Textproductadd = "Add Product";
+  static String TextCategory = "Category1";
 }

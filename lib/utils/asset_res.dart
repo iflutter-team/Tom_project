@@ -10,4 +10,5 @@ class ImageRes {
   static const forgot2 = "assets/images/Forgot pass2.png";
   static const home = "assets/images/home2.png";
   static const product = "assets/images/mango.png";
+  static const Category = "assets/images/strawberry.png";
 }
