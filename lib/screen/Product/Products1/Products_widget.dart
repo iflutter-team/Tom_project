@@ -9,7 +9,7 @@ import 'package:tom_project/utils/string_res.dart';
 Widget productsList() {
   return Expanded(
     child: GridView.builder(
-      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,
         childAspectRatio: 0.7,
         crossAxisSpacing: 10,
@@ -28,13 +28,13 @@ Widget productsList() {
 Widget productsadd() {
   return GetBuilder<Productscontroller>(
     builder: (controller) => Padding(
-      padding: EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 10),
       child: MaterialButton(
         onPressed: controller.navigetToAddproduct,
         color: ColorsRes.green2color,
         child: Text(
           StringRes.Textproductadd,
-          style: TextStyle(
+          style: const TextStyle(
               fontSize: 18, color: Colors.white, fontWeight: FontWeight.bold),
         ),
       ),

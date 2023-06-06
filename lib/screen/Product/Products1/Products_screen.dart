@@ -13,7 +13,7 @@ class Products extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             productsList(),
