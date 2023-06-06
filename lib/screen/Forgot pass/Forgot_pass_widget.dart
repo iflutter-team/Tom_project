@@ -6,7 +6,7 @@ import 'package:tom_project/utils/string_res.dart';
 import 'Forgot_pass_controller.dart';
 
 Widget Imageforgot() {
-  return Image(
+  return const Image(
     image: AssetImage(ImageRes.forgot),
   );
 }
@@ -14,7 +14,7 @@ Widget Imageforgot() {
 Widget Texttitle() {
   return Text(
     StringRes.Forgottitle,
-    style: TextStyle(
+    style: const TextStyle(
       color: ColorsRes.green1color,
       fontSize: 20,
     ),
@@ -42,7 +42,7 @@ Widget Forgotbutton() {
   return GetBuilder<Forgotcontroller>(
     builder: (controller) => MaterialButton(
       minWidth: 300,
-      color: Color(0xFF227c3e),
+      color: const Color(0xFF227c3e),
       onPressed: controller.navigetToForgot,
       child: Text(
         StringRes.texttitle,

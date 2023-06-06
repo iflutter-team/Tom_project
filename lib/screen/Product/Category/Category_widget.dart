@@ -23,8 +23,8 @@ import 'package:tom_project/utils/string_res.dart';
 
 Widget product1() {
   return Container(
-    margin: EdgeInsets.all(5),
-    height: 200,
+    margin: const EdgeInsets.all(5),
+    height: 150,
     width: 150,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
@@ -39,7 +39,7 @@ Widget product1() {
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: AssetImage("assets/images/strawberry.png"),
             ),
           ),
@@ -52,8 +52,8 @@ Widget product1() {
 
 Widget product2() {
   return Container(
-    margin: EdgeInsets.all(5),
-    height: 100,
+    margin: const EdgeInsets.all(5),
+    height: 150,
     width: 150,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
@@ -63,17 +63,133 @@ Widget product2() {
       mainAxisAlignment: MainAxisAlignment.spaceAround,
       children: [
         Container(
-          width: 160,
-          height: 160,
+          width: 100,
+          height: 100,
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: AssetImage("assets/images/strawberry.png"),
             ),
           ),
         ),
-        Text(StringRes.TextCategory),
+        Text(StringRes.TextCategory2),
+      ],
+    ),
+  );
+}
+
+Widget product3() {
+  return Container(
+    margin: const EdgeInsets.all(5),
+    height: 150,
+    width: 150,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+      color: ColorsRes.addcolor,
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            image: const DecorationImage(
+              image: AssetImage("assets/images/strawberry.png"),
+            ),
+          ),
+        ),
+        Text(StringRes.TextCategory3),
+      ],
+    ),
+  );
+}
+
+Widget product4() {
+  return Container(
+    margin: const EdgeInsets.all(5),
+    height: 150,
+    width: 150,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+      color: ColorsRes.addcolor,
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            image: const DecorationImage(
+              image: AssetImage("assets/images/strawberry.png"),
+            ),
+          ),
+        ),
+        Text(StringRes.TextCategory4),
+      ],
+    ),
+  );
+}
+
+Widget product5() {
+  return Container(
+    margin: const EdgeInsets.all(5),
+    height: 150,
+    width: 150,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+      color: ColorsRes.addcolor,
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            image: const DecorationImage(
+              image: AssetImage("assets/images/strawberry.png"),
+            ),
+          ),
+        ),
+        Text(StringRes.TextCategory5),
+      ],
+    ),
+  );
+}
+
+Widget product6() {
+  return Container(
+    margin: const EdgeInsets.all(5),
+    height: 150,
+    width: 150,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(15),
+      color: ColorsRes.addcolor,
+    ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          width: 100,
+          height: 100,
+          decoration: BoxDecoration(
+            color: Colors.white,
+            borderRadius: BorderRadius.circular(30),
+            image: const DecorationImage(
+              image: AssetImage("assets/images/strawberry.png"),
+            ),
+          ),
+        ),
+        Text(StringRes.TextCategory6),
       ],
     ),
   );

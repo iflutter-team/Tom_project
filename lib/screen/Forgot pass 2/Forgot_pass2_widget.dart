@@ -5,7 +5,7 @@ import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
 Widget ImageForgetpass2() {
-  return Image(
+  return const Image(
     image: AssetImage("assets/images/Forgot pass2.png"),
   );
 }
@@ -13,7 +13,7 @@ Widget ImageForgetpass2() {
 Widget Forgotpass2Texttitle() {
   return Text(
     StringRes.Forgottitle2,
-    style: TextStyle(
+    style: const TextStyle(
       color: ColorsRes.green1color,
       fontSize: 20,
     ),

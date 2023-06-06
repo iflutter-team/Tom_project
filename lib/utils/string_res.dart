@@ -160,4 +160,9 @@ class StringRes {
   static String Textoutofstock = "out of stock";
   static String Textproductadd = "Add Product";
   static String TextCategory = "Category1";
+  static String TextCategory2 = "Category2";
+  static String TextCategory3 = "Category3";
+  static String TextCategory4 = "Category4";
+  static String TextCategory5 = "Category5";
+  static String TextCategory6 = "Category6";
 }

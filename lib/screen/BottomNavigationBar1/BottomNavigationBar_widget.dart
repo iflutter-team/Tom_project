@@ -14,14 +14,14 @@ Widget appbarimage() {
 Widget appbarIcon() {
   return IconButton(
     onPressed: () {},
-    icon: Icon(Icons.menu, color: ColorsRes.green1color),
+    icon: const Icon(Icons.menu, color: ColorsRes.green1color),
   );
 }
 
 Widget appbarIcon2() {
   return IconButton(
     onPressed: () {},
-    icon: Icon(
+    icon: const Icon(
       Icons.language,
       color: ColorsRes.green1color,
     ),
@@ -31,7 +31,7 @@ Widget appbarIcon2() {
 Widget appbarIcon3() {
   return IconButton(
     onPressed: () {},
-    icon: Icon(
+    icon: const Icon(
       Icons.notifications_outlined,
       color: ColorsRes.green1color,
     ),
@@ -42,9 +42,9 @@ Widget BottomNavigationBar1() {
   return GetBuilder<NavigationBarController>(
     builder: (controller) => BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
-      backgroundColor: Color(0xFF67bb6a),
+      backgroundColor: const Color(0xFF67bb6a),
       unselectedItemColor: ColorsRes.whitecolor,
-      items: <BottomNavigationBarItem>[
+      items: const <BottomNavigationBarItem>[
         BottomNavigationBarItem(
           icon: Icon(
             Icons.home_outlined,

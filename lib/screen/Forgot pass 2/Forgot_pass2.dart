@@ -15,11 +15,11 @@ class Forgotpass2 extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ImageForgetpass2(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Forgotpass2Texttitle(),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             ForgotTextfiled(),

@@ -7,11 +7,40 @@ class Category1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Row(children: [
-          product1(),
-          product2(),
-        ]),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            children: [
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                product1(),
+                const SizedBox(
+                  width: 40,
+                ),
+                product2(),
+              ]),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                product3(),
+                const SizedBox(
+                  width: 40,
+                ),
+                product4(),
+              ]),
+              const SizedBox(
+                height: 20,
+              ),
+              Row(mainAxisAlignment: MainAxisAlignment.center, children: [
+                product5(),
+                const SizedBox(
+                  width: 40,
+                ),
+                product6(),
+              ]),
+            ],
+          ),
+        ),
       ),
     );
   }

@@ -17,13 +17,13 @@ class Homescreen extends StatelessWidget {
           Listtile(),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               HomeText(),
-              Spacer(),
+              const Spacer(),
               HomeText2(),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               HomeIcon(),
@@ -40,22 +40,22 @@ class Homescreen extends StatelessWidget {
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 height: 15,
               ),
               HomeText3(),
-              Spacer(),
+              const Spacer(),
               HomeText4(),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               HomeIcon2(),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Homelist(),

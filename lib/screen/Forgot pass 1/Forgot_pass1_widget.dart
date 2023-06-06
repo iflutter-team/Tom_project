@@ -5,13 +5,13 @@ import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
 Widget ImagesForgotpass1() {
-  return Image(image: AssetImage("assets/images/Forgot pass1.png"));
+  return const Image(image: AssetImage("assets/images/Forgot pass1.png"));
 }
 
 Widget Forgottitle1() {
   return Text(
     StringRes.Forgottitle1,
-    style: TextStyle(
+    style: const TextStyle(
       color: ColorsRes.green1color,
       fontSize: 20,
     ),
@@ -39,7 +39,7 @@ Widget Forgotpass1button() {
   return GetBuilder<Forgotpass1controller>(
     builder: (controller) => MaterialButton(
       minWidth: 300,
-      color: Color(0xFF227c3e),
+      color: const Color(0xFF227c3e),
       onPressed: controller.navigetToForgotpass1,
       child: Text(
         StringRes.texttitle1,

@@ -10,7 +10,7 @@ Widget Listtile() {
     builder: (controller) => ListTile(
       title: Text(
         StringRes.TextAone,
-        style: TextStyle(color: ColorsRes.green1color, fontSize: 20),
+        style: const TextStyle(color: ColorsRes.green1color, fontSize: 20),
       ),
       trailing: Switch(
           value: controller.isOn,
@@ -24,19 +24,19 @@ Widget Listtile() {
 Widget HomeText() {
   return Text(
     StringRes.Textview,
-    style: TextStyle(color: ColorsRes.green1color, fontSize: 20),
+    style: const TextStyle(color: ColorsRes.green1color, fontSize: 20),
   );
 }
 
 Widget HomeText2() {
   return Text(
     StringRes.Textweek,
-    style: TextStyle(color: ColorsRes.green1color, fontSize: 20),
+    style: const TextStyle(color: ColorsRes.green1color, fontSize: 20),
   );
 }
 
 Widget HomeIcon() {
-  return Icon(
+  return const Icon(
     Icons.arrow_drop_down,
     size: 35,
     color: ColorsRes.green1color,
@@ -50,16 +50,16 @@ Widget HomeExpanded() {
       childAspectRatio: 1.5,
       mainAxisSpacing: 10,
       crossAxisSpacing: 10,
-      padding: EdgeInsets.all(15),
-      physics: NeverScrollableScrollPhysics(),
+      padding: const EdgeInsets.all(15),
+      physics: const NeverScrollableScrollPhysics(),
       children: [
         Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: 30,
           width: 80,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(blurRadius: 2),
               ],
               color: ColorsRes.whitecolor),
@@ -69,11 +69,11 @@ Widget HomeExpanded() {
               children: [
                 Text(
                   StringRes.Textorder,
-                  style: TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 18),
                 ),
                 Text(
                   StringRes.Textorder1,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: ColorsRes.green1color,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
@@ -81,12 +81,12 @@ Widget HomeExpanded() {
               ]),
         ),
         Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: 30,
           width: 80,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(blurRadius: 2),
               ],
               color: ColorsRes.whitecolor),
@@ -96,11 +96,11 @@ Widget HomeExpanded() {
               children: [
                 Text(
                   StringRes.Textsales,
-                  style: TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 18),
                 ),
                 Text(
                   StringRes.Textsales1,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: ColorsRes.green1color,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
@@ -113,7 +113,7 @@ Widget HomeExpanded() {
           width: 80,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(blurRadius: 2),
               ],
               color: ColorsRes.whitecolor),
@@ -127,7 +127,7 @@ Widget HomeExpanded() {
                 ),
                 Text(
                   StringRes.Textstore1,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: ColorsRes.green1color,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
@@ -135,12 +135,12 @@ Widget HomeExpanded() {
               ]),
         ),
         Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: 30,
           width: 80,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(blurRadius: 2),
               ],
               color: ColorsRes.whitecolor),
@@ -154,7 +154,7 @@ Widget HomeExpanded() {
                 ),
                 Text(
                   StringRes.Texttotal1,
-                  style: TextStyle(
+                  style: const TextStyle(
                       color: ColorsRes.green1color,
                       fontSize: 20,
                       fontWeight: FontWeight.bold),
@@ -167,7 +167,7 @@ Widget HomeExpanded() {
 }
 
 Widget HomeDivider() {
-  return Divider(
+  return const Divider(
     height: 30,
     thickness: 2,
     indent: 20,
@@ -179,7 +179,7 @@ Widget HomeDivider() {
 Widget HomeText3() {
   return Text(
     StringRes.Textactive,
-    style: TextStyle(
+    style: const TextStyle(
       color: ColorsRes.green1color,
       fontSize: 20,
       fontWeight: FontWeight.bold,
@@ -195,7 +195,7 @@ Widget HomeText4() {
 }
 
 Widget HomeIcon2() {
-  return Icon(
+  return const Icon(
     Icons.arrow_forward_ios_outlined,
     size: 20,
     color: ColorsRes.grey1color,

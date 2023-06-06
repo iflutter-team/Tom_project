@@ -15,10 +15,10 @@ class Bottomhello extends StatelessWidget {
       Get.put(NavigationBarController());
 
   final screen = [
-    Homescreen(),
+    const Homescreen(),
     productscreen(),
-    Orderscreen(),
-    Profiles(),
+    const Orderscreen(),
+    const Profiles(),
   ];
 
   @override

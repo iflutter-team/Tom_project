@@ -15,11 +15,11 @@ class Forgot extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Imageforgot(),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Texttitle(),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           ForgotTextfiled(),
