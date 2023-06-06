@@ -54,7 +54,7 @@ Widget product2() {
   return Container(
     margin: EdgeInsets.all(5),
     height: 100,
-    width: 100,
+    width: 150,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(15),
       color: ColorsRes.addcolor,
