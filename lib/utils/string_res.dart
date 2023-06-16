@@ -165,4 +165,20 @@ class StringRes {
   static String TextCategory4 = "Category4";
   static String TextCategory5 = "Category5";
   static String TextCategory6 = "Category6";
+
+  ////----------------------add product-------------------------------///
+  static String TextAddProduct = "Add Product";
+  static String TextProductImage = "Product Image";
+  static String TextProductName = "Product Name";
+  static String TextMango = "Mango";
+  static String TextSelectCategory = "Select Category";
+  static String TextFruits = "Fruits";
+  static String TextRegularPrice = "Regular Price";
+  static String Textprice = "\$300.34";
+  static String TextSellingPrice = "Selling Price";
+  static String Textselling = "\$200.34";
+  static String TextStock = "Stock";
+  static String Textstock = "100";
+  static String Textunit = "kg";
+  static String TextProductDescription = "Product Description";
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/common/appbar_common.dart';
 import 'package:tom_project/screen/Product/Category/Category_screen.dart';
 import 'package:tom_project/screen/Product/product/Product_screen_widget.dart';
 import 'package:tom_project/utils/string_res.dart';
@@ -14,6 +15,7 @@ class productscreen extends StatelessWidget {
       initialIndex: 0,
       length: 2,
       child: Scaffold(
+        appBar: appBar,
         body: Column(
           children: [
             productTextfiled(),

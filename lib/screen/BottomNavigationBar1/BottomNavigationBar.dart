@@ -24,15 +24,6 @@ class Bottomhello extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: ColorsRes.whitecolor,
-        leading: appbarIcon(),
-        title: appbarimage(),
-        actions: [
-          appbarIcon2(),
-          appbarIcon3(),
-        ],
-      ),
       body: Obx(
         () => IndexedStack(
           index: navigationBarController.tabIndex.value,

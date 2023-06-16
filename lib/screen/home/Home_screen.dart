@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/common/appbar_common.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/screen/home/Home_screen_widget.dart';
 
@@ -12,6 +13,7 @@ class Homescreen extends StatelessWidget {
       Homecontroller(),
     );
     return Scaffold(
+      appBar: appBar,
       body: Column(
         children: [
           Listtile(),
