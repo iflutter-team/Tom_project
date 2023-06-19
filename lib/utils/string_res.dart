@@ -174,11 +174,100 @@ class StringRes {
   static String TextSelectCategory = "Select Category";
   static String TextFruits = "Fruits";
   static String TextRegularPrice = "Regular Price";
-  static String Textprice = "\$300.34";
   static String TextSellingPrice = "Selling Price";
-  static String Textselling = "\$200.34";
   static String TextStock = "Stock";
-  static String Textstock = "100";
-  static String Textunit = "kg";
+  static String Textunit = "Unit";
+  static String Textkg = "kg";
+  static String Textgm = "gm";
   static String TextProductDescription = "Product Description";
+  static String Textcategory1 = "select";
+  static String Textcategory2 = "mango";
+  static String Textcategory3 = "apple";
+  static String Textcategory4 = "watermelon";
+  static String Textcategory5 = "guava";
+  static String Textcategory6 = "Peach";
+
+////----------------------delete product-------------------------------///
+  static String Textdeletetitle1 = "Delete";
+  static String Textdeletetitle2 = "Cancel";
+  static String Textdeletetitle3 = "Are you sure you want to delete this item?";
+
+////----------------------drawer product-------------------------------///
+  static String drawer1 = "My Profile";
+  static String drawer2 = "My Order";
+  static String drawer3 = "Transaction History";
+  static String drawer4 = "Offers";
+  static String drawer5 = "FAQ";
+  static String drawer6 = "Privacy Policies";
+  static String drawer7 = "Terms & Conditions";
+  static String drawerlogout = "Log Out";
+
+////----------------------tabbar product-------------------------------///
+  static String title = "Order History";
+  static String tabbar1 = "Current Orders";
+  static String tabbar2 = "Dispatched";
+  static String tabbar3 = "Delivered";
+  static String tabbar4 = "Cancelled";
+
+////----------------------profiles product-------------------------------///
+  static String profilestitle1 = "Profile Details";
+  static String profilestitle2 = "Ankur patel";
+  static String profilestitle3 = "@ankur_121";
+  static String profilestitle4 = "Gender";
+  static String profilestitle5 = "Male";
+  static String profilestitle6 = "Birthday";
+  static String profilestitle7 = "24/10/2004";
+  static String profilestitle8 = "Email";
+  static String profilestitle9 = "rex4dom@gmail.com";
+  static String profilestitle10 = "Phone Number";
+  static String profilestitle11 = "78925-99255";
+  static String profilestitle12 = "Upload certificate";
+  static String profilestitle17 = "Upload";
+  static String profilestitle13 = "Change Password";
+  static String profilestitle14 = "GST Number";
+  static String profilestitle15 = "Company Address";
+  static String profilestitle16 = "Bank Details";
+
+////----------------------Bank Details product-------------------------------///
+  static String bankDetails1 = "Bank Name:- ";
+  static String bankDetails2 = "HDFC Bank";
+  static String bankDetails3 = "Branch Name:- ";
+  static String bankDetails4 = "Memnagar";
+  static String bankDetails5 = "IFSC Code:- ";
+  static String bankDetails6 = "HDFC2FO4";
+  static String bankDetails7 = "Account Holder:- ";
+  static String bankDetails8 = "xyz";
+  static String bankDetails9 = "Account No:- ";
+  static String bankDetails10 = "1237-5678-8901-2345";
+  static String bankDetails11 = "Account Type:- ";
+  static String bankDetails12 = "Saving";
+
+  ///-----------------------faqsscreen---------------------------------------------///
+  static String faqsscreen1 = "FAQs";
+  static String faqsscreen2 =
+      "OYAYUBI is responsible for protecting your Personal Data and is subject to Applicable Laws. We are committed to managing, protecting and processing your Personal Data in accordance with this Policy which will apply to all Personal Data that we obtain from you through our Platform.";
+  static String faqsscreen3 =
+      "Please read and understand this Policy which contains information you need to know about how we collect, use, process and disclose your Personal Data. We may also collect and process your Personal Data as excluded in the Applicable Law which is not described in this Policy. We believe that this Policy can assist you in making the decision to provide your Personal Data to us.";
+
+  ///-----------------------------Privacy Policy--------------------------------------///
+  static String PrivacyPolicy1 = "Privacy Policy";
+  static String PrivacyPolicy2 =
+      "OYAYUBI is responsible for protecting your Personal Data and is subject to Applicable Laws. We are committed to managing, protecting and processing your Personal Data in accordance with this Policy which will apply to all Personal Data that we obtain from you through our Platform.";
+  static String PrivacyPolicy3 =
+      "Please read and understand this Policy which contains information you need to know about how we collect, use, process and disclose your Personal Data. We may also collect and process your Personal Data as excluded in the Applicable Law which is not described in this Policy. We believe that this Policy can assist you in making the decision to provide your Personal Data to us.";
+  static String PrivacyPolicy4 =
+      "For the purpose of understanding OYAYUBI's Personal Data Protection Policy (“Policy”), the capitalized words used in this Policy have the following meanings:";
+  static String PrivacyPolicy5 =
+      'Applicable Law" means all laws and regulations relating to the protection and / or management of personal data that apply in Indonesia, including but not limited to Law No. 11 of 2018 concerning Information and Electronic Transactions (and its amendments), Government Regulation No. 82 of 2012 concerning Implementation of Electronic Systems and Transactions and Regulation of the Minister of Communication and Information Technology Number 20 of 2016 concerning Protection of Personal Data in Electronic Systems.';
+
+  ///-----------------------------Terms & Conditions--------------------------------------///
+  static String TermsConditions1 = "Terms & Conditions";
+  static String TermsConditions2 =
+      "OYAYUBI is responsible for protecting your Personal Data and is subject to Applicable Laws. We are committed to managing, protecting and processing your Personal Data in accordance with this Policy which will apply to all Personal Data that we obtain from you through our Platform.";
+  static String TermsConditions3 =
+      "Please read and understand this Policy which contains information you need to know about how we collect, use, process and disclose your Personal Data. We may also collect and process your Personal Data as excluded in the Applicable Law which is not described in this Policy. We believe that this Policy can assist you in making the decision to provide your Personal Data to us.";
+  static String TermsConditions4 =
+      "For the purpose of understanding OYAYUBI's Personal Data Protection Policy (“Policy”), the capitalized words used in this Policy have the following meanings:";
+  static String TermsConditions5 =
+      'Applicable Law" means all laws and regulations relating to the protection and / or management of personal data that apply in Indonesia, including but not limited to Law No. 11 of 2018 concerning Information and Electronic Transactions (and its amendments), Government Regulation No. 82 of 2012 concerning Implementation of Electronic Systems and Transactions and Regulation of the Minister of Communication and Information Technology Number 20 of 2016 concerning Protection of Personal Data in Electronic Systems.';
 }

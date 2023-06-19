@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
+import 'package:tom_project/screen/PrivacyPolicy/PrivacyPolicy_screen.dart';
+import 'package:tom_project/screen/Profile/Profile_screen.dart';
+import 'package:tom_project/screen/Terms%20and%20conditions/Termsconditions_screen.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
+import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
+
+import '../FAQs/FAQs_screen.dart';
+import '../Orders/orders/Orders_screen.dart';
 
 Widget Listtile() {
   return GetBuilder<Homecontroller>(
@@ -773,7 +781,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod6,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -792,7 +800,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder6,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -811,34 +819,77 @@ Widget Homelist() {
   );
 }
 
-// Widget Homenavigatoer() {
-//   return GetBuilder<Homecontroller>(
-//     builder: (controller) => BottomNavigationBar(
-//       type: BottomNavigationBarType.fixed,
-//       backgroundColor: Color(0xFF67bb6a),
-//       items: <BottomNavigationBarItem>[
-//         BottomNavigationBarItem(
-//           icon: Icon(
-//             Icons.home_outlined,
-//           ),
-//           label: '',
-//         ),
-//         BottomNavigationBarItem(
-//           icon: Icon(Icons.menu),
-//           label: '',
-//         ),
-//         BottomNavigationBarItem(
-//           icon: Icon(Icons.shopping_bag_outlined),
-//           label: '',
-//         ),
-//         BottomNavigationBarItem(
-//           icon: Icon(Icons.account_circle_outlined),
-//           label: '',
-//         ),
-//       ],
-//       currentIndex: controller.tabIndex,
-//       selectedItemColor: ColorsRes.whitecolor,
-//       onTap: (val) => controller.changeTabIndex(val),
-//     ),
-//   );
-// }
+Widget drawer() {
+  return Drawer(
+    child: Column(
+      children: [
+        Container(
+          height: 100,
+          width: 350,
+          color: Colors.grey.shade200,
+          child: Row(
+            children: [
+              Image.asset(ImageRes.drawer),
+            ],
+          ),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer1,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () {},
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer2,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () {},
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer3,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () {},
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer4,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () {},
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer5,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () => Get.to(const faqsscreen()),
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer6,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () => Get.to(const PrivacyPolicy()),
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+        ListTile(
+          title: Text(
+            StringRes.drawer7,
+            style: const TextStyle(color: ColorsRes.green1color),
+          ),
+          onTap: () => Get.to(const termsconditionsScreen()),
+          leading: const Icon(Icons.keyboard_arrow_down),
+        ),
+      ],
+    ),
+  );
+}

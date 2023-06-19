@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/utils/color_res.dart';
 
+import '../Delete/Delete_screen.dart';
+
 class ShowProduct extends StatelessWidget {
   const ShowProduct(
       {super.key, this.discount, this.inStock, this.image, this.productname});
@@ -40,6 +42,25 @@ class ShowProduct extends StatelessWidget {
           ),
           Text(productname!),
           const Text('99.1'),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const delete(),
+                      ));
+                },
+                style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
+                child: const Text(
+                  'Delete',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );

@@ -11,19 +11,19 @@ Widget appbarimage() {
   );
 }
 
-Widget appbarIcon() {
-  return IconButton(
-    onPressed: () {},
-    icon: const Icon(Icons.menu, color: ColorsRes.green1color),
-  );
-}
+// Widget appbarIcon() {
+//   return IconButton(
+//     onPressed: () {},
+//     icon: const Icon(Icons.menu, color: ColorsRes.green1color),
+//   );
+// }
 
 Widget appbarIcon2() {
   return IconButton(
     onPressed: () {},
     icon: const Icon(
       Icons.language,
-      color: ColorsRes.green1color,
+      color: ColorsRes.whitecolor,
     ),
   );
 }
@@ -33,7 +33,7 @@ Widget appbarIcon3() {
     onPressed: () {},
     icon: const Icon(
       Icons.notifications_outlined,
-      color: ColorsRes.green1color,
+      color: ColorsRes.whitecolor,
     ),
   );
 }

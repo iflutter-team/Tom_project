@@ -11,4 +11,6 @@ class ImageRes {
   static const home = "assets/images/home2.png";
   static const product = "assets/images/mango.png";
   static const Category = "assets/images/strawberry.png";
+  static const deleteproduct = "assets/images/Alert Icon.png";
+  static const drawer = "assets/images/drawer.png";
 }

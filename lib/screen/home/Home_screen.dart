@@ -63,6 +63,7 @@ class Homescreen extends StatelessWidget {
           Homelist(),
         ],
       ),
+      drawer: drawer(),
     );
   }
 }

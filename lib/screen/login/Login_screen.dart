@@ -18,44 +18,69 @@ class Login extends StatelessWidget {
         },
         child: Stack(
           children: [
-            const Positioned(
-              bottom: 650,
-              right: 200,
-              child: CircleAvatar(
-                radius: 300,
-                backgroundColor: ColorsRes.greenColor,
+            Positioned(
+              top: -100,
+              left: -90,
+              child: Container(
+                height: 240,
+                width: 240,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorsRes.greenColor,
+                  boxShadow: [BoxShadow(blurRadius: 8)],
+                ),
               ),
             ),
-            const Positioned(
-              bottom: 680,
-              left: 300,
-              child: CircleAvatar(
-                radius: 20,
-                backgroundColor: ColorsRes.greenColor,
+            Positioned(
+              top: Get.height / 2,
+              left: -130,
+              child: Container(
+                height: 160,
+                width: 160,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorsRes.greenColor,
+                  boxShadow: [BoxShadow(blurRadius: 8)],
+                ),
               ),
             ),
-            const Positioned(
-              bottom: 400,
-              left: 330,
-              child: CircleAvatar(
-                radius: 100,
-                backgroundColor: ColorsRes.greenColor,
+            Positioned(
+              bottom: -100,
+              right: -100,
+              child: Container(
+                height: 200,
+                width: 200,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorsRes.greenColor,
+                  boxShadow: [BoxShadow(blurRadius: 8)],
+                ),
               ),
             ),
-            const Positioned(
-              bottom: 150,
-              right: 350,
-              child: CircleAvatar(
-                radius: 100,
-                backgroundColor: ColorsRes.greenColor,
+            Positioned(
+              top: Get.height * 0.25,
+              right: -140,
+              child: Container(
+                height: 180,
+                width: 180,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorsRes.greenColor,
+                  boxShadow: [BoxShadow(blurRadius: 8)],
+                ),
               ),
             ),
-            const Positioned(
-              bottom: -130,
-              left: 300,
-              child: CircleAvatar(
-                radius: 150,
-                backgroundColor: ColorsRes.greenColor,
+            Positioned(
+              top: Get.height * 0.10,
+              left: Get.width * 0.70,
+              child: Container(
+                height: 60,
+                width: 60,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: ColorsRes.greenColor,
+                  boxShadow: [BoxShadow(blurRadius: 8)],
+                ),
               ),
             ),
             Center(

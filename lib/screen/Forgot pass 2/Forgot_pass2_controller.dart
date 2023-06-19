@@ -8,7 +8,7 @@ class Forgotpass2controller extends GetxController {
 
   void navigetToForgotLogin() {
     Get.to(
-      () => Login(),
+      () => const Login(),
     );
   }
 }

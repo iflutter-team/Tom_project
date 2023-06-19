@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tom_project/utils/color_res.dart';
+import 'package:tom_project/screen/Profile/Profile_screen_widget.dart';
+import 'package:tom_project/utils/string_res.dart';
 
 class Profiles extends StatelessWidget {
   const Profiles({super.key});
@@ -7,13 +8,116 @@ class Profiles extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
+      appBar: AppBar(
+        elevation: 0,
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          onPressed: () {},
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.green,
+          ),
+        ),
+        centerTitle: true,
+        title: Text(
+          StringRes.profilestitle1,
+          style: const TextStyle(fontSize: 20, color: Colors.green),
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.menu,
+              color: Colors.green,
+            ),
+          )
+        ],
+        bottom: const PreferredSize(
+          preferredSize: Size(double.infinity, 10),
+          child: Column(
+            children: [
+              Divider(
+                color: Colors.green,
+                thickness: 1,
+              ),
+            ],
+          ),
+        ),
+      ),
+      body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              "profiles",
-              style: TextStyle(fontSize: 50, color: ColorsRes.green1color),
+            Row(
+              children: [
+                const SizedBox(
+                  height: 10,
+                  width: 15,
+                ),
+                profiletitle1(),
+                const SizedBox(
+                  width: 25,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    profiletitle2(),
+                    profiletitle3(),
+                  ],
+                ),
+                const Spacer(),
+                profiletitle4(),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle5(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle6(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle7(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle8(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle9(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle10(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle11(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle12(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle13(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle14(),
+            const SizedBox(
+              height: 20,
+            ),
+            profiletitle15(),
+            const SizedBox(
+              height: 20,
+            ),
+            bankdetails(),
+            const SizedBox(
+              height: 20,
             ),
           ],
         ),
