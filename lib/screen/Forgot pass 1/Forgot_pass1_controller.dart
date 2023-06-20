@@ -7,14 +7,14 @@ class Forgotpass1controller extends GetxController {
   final TextEditingController Otpcontroller = TextEditingController();
 
   void navigetToForgotpass1() {
-    Get.to(
+    Get.off(
       () => const Forgotpass2(),
     );
   }
 
   navigetToForgotlogin() {
-    Get.to(
-      () => const Login(),
+    Get.off(
+      () => Login(),
     );
   }
 }

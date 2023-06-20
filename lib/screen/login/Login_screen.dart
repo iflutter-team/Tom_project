@@ -5,11 +5,12 @@ import 'package:tom_project/utils/color_res.dart';
 import 'Login_screen_widget.dart';
 
 class Login extends StatelessWidget {
-  const Login({super.key});
+  Login({super.key});
+  final LoginController loginController = Get.put(LoginController());
 
   @override
   Widget build(BuildContext context) {
-    Get.put(LoginController());
+    // Get.put(LoginController());
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: GestureDetector(

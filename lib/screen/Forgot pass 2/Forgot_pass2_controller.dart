@@ -7,8 +7,8 @@ class Forgotpass2controller extends GetxController {
   final TextEditingController confrimcontroller = TextEditingController();
 
   void navigetToForgotLogin() {
-    Get.to(
-      () => const Login(),
+    Get.off(
+      () => Login(),
     );
   }
 }

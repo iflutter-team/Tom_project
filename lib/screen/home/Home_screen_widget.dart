@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
 import 'package:tom_project/screen/PrivacyPolicy/PrivacyPolicy_screen.dart';
-import 'package:tom_project/screen/Profile/Profile_screen.dart';
 import 'package:tom_project/screen/Terms%20and%20conditions/Termsconditions_screen.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/utils/asset_res.dart';
@@ -10,7 +8,6 @@ import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
 import '../FAQs/FAQs_screen.dart';
-import '../Orders/orders/Orders_screen.dart';
 
 Widget Listtile() {
   return GetBuilder<Homecontroller>(
@@ -116,7 +113,7 @@ Widget HomeExpanded() {
               ]),
         ),
         Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           height: 30,
           width: 80,
           decoration: BoxDecoration(
@@ -131,7 +128,7 @@ Widget HomeExpanded() {
               children: [
                 Text(
                   StringRes.Textstore,
-                  style: TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 18),
                 ),
                 Text(
                   StringRes.Textstore1,
@@ -158,7 +155,7 @@ Widget HomeExpanded() {
               children: [
                 Text(
                   StringRes.Texttotal,
-                  style: TextStyle(fontSize: 18),
+                  style: const TextStyle(fontSize: 18),
                 ),
                 Text(
                   StringRes.Texttotal1,
@@ -198,7 +195,7 @@ Widget HomeText3() {
 Widget HomeText4() {
   return Text(
     StringRes.Textall,
-    style: TextStyle(color: ColorsRes.grey1color, fontSize: 20),
+    style: const TextStyle(color: ColorsRes.grey1color, fontSize: 20),
   );
 }
 
@@ -231,45 +228,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
@@ -281,7 +278,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -300,7 +297,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -314,7 +311,7 @@ Widget Homelist() {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -331,45 +328,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders1,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime1,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver1,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd1,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
@@ -381,7 +378,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod1,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -400,7 +397,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder1,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -414,7 +411,7 @@ Widget Homelist() {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -431,45 +428,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders3,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime3,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver3,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd3,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
@@ -481,7 +478,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod3,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -500,7 +497,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder3,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -514,7 +511,7 @@ Widget Homelist() {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -531,45 +528,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders4,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime4,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver4,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd4,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
@@ -581,7 +578,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod4,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -600,7 +597,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder4,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -614,7 +611,7 @@ Widget Homelist() {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -631,45 +628,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders5,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime5,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver5,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd5,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
@@ -681,7 +678,7 @@ Widget Homelist() {
                   ),
                   Text(
                     StringRes.Textcod5,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
@@ -700,7 +697,7 @@ Widget Homelist() {
                         children: [
                           Text(
                             StringRes.Textvieworder5,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: ColorsRes.whitecolor,
                                 fontSize: 15,
                                 fontWeight: FontWeight.bold),
@@ -714,7 +711,7 @@ Widget Homelist() {
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 20,
         ),
         Container(
@@ -731,45 +728,45 @@ Widget Homelist() {
                 children: [
                   Text(
                     StringRes.Textorders6,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Texttime6,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],
               ),
               Row(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   Text(
                     StringRes.Textdriver6,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: ColorsRes.green1color,
                         fontSize: 15,
                         fontWeight: FontWeight.bold),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Text(
                     StringRes.Textadd6,
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: ColorsRes.grey1color,
                       fontSize: 15,
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 20,
                   ),
                 ],

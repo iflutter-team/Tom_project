@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
+import 'package:tom_project/services/pref_service.dart';
+import 'package:tom_project/utils/PrefrenceRes.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
 import 'Login_controller.dart';
 
 Widget Imagelogin() {
-  return Image(
+  return const Image(
     image: AssetImage(ImageRes.login),
   );
 }
@@ -74,8 +76,15 @@ Widget loginbutton() {
   return GetBuilder<LoginController>(
     builder: (controller) => MaterialButton(
       minWidth: 300,
-      color: Color(0xFF227c3e),
-      onPressed: controller.navigetToLoginscreen,
+      color: const Color(0xFF227c3e),
+      //onPressed: controller.navigetToLoginscreen,
+      onPressed: () {
+        if (controller.Hello) {
+          Preferenceservices.setValue(PrefrenceRes.signupUser, true);
+          controller.check();
+          // controller.navigetToLoginscreen();
+        }
+      },
       child: Text(
         StringRes.logintitle1,
         style: const TextStyle(color: Colors.white),

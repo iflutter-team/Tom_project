@@ -1,7 +1,9 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
 import 'package:tom_project/screen/splash%20screen/Splash_screen_widget.dart';
+import 'package:tom_project/screen/splash%20screen/Splash_scrren_controller.dart';
 
 class Flash extends StatefulWidget {
   const Flash({Key? key}) : super(key: key);
@@ -11,21 +13,8 @@ class Flash extends StatefulWidget {
 }
 
 class _FlashState extends State<Flash> {
-  @override
-  void initState() {
-    super.initState();
-    Timer(
-      const Duration(seconds: 3),
-      () {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (context) => const Login(),
-          ),
-        );
-      },
-    );
-  }
+  SplashScreenController splashScreenController =
+      Get.put(SplashScreenController());
 
   @override
   Widget build(BuildContext context) {

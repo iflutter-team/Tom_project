@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'Register_controller.dart';
 
 Widget Imageregister() {
-  return Image(
+  return const Image(
     image: AssetImage(ImageRes.register),
   );
 }
@@ -25,7 +25,7 @@ Widget RegisterTextfiled2() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.manage_accounts),
         labelText: StringRes.labelText2title,
         hintText: StringRes.hintText2title,
       ),
@@ -41,7 +41,7 @@ Widget RegisterTextfiled3() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.mail_outline),
         labelText: StringRes.labelText3title,
         hintText: StringRes.hintText3title,
       ),
@@ -73,7 +73,7 @@ Widget RegisterTextfiled5() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.lock),
         labelText: StringRes.labelText5title,
         hintText: StringRes.hintText5title,
       ),
@@ -89,7 +89,7 @@ Widget RegisterTextfiled6() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.lock_open),
         labelText: StringRes.labelText6title,
         hintText: StringRes.hintText6title,
       ),
@@ -105,7 +105,7 @@ Widget RegisterTextfiled7() {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
         ),
-        prefixIcon: const Icon(Icons.account_circle_outlined),
+        prefixIcon: const Icon(Icons.important_devices_outlined),
         labelText: StringRes.labelText7title,
         hintText: StringRes.hintText7title,
       ),
@@ -137,11 +137,16 @@ Widget Registernext() {
   return GetBuilder<RegisterController>(
     builder: (controller) => MaterialButton(
         minWidth: 300,
-        color: Color(0xFF227c3e),
-        onPressed: controller.navigetToRegister,
+        color: const Color(0xFF227c3e),
+        onPressed: () {
+          if (controller.right) {
+            controller.addData();
+            // controller.navigetToRegister();
+          }
+        },
         child: Text(
-          StringRes.Register1,
-          style: TextStyle(color: Colors.white),
+          StringRes.Registeration1,
+          style: const TextStyle(color: Colors.white),
         )),
   );
 }

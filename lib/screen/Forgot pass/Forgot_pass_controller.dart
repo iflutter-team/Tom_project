@@ -7,13 +7,13 @@ class Forgotcontroller extends GetxController {
   final TextEditingController phonecontroller = TextEditingController();
 
   void navigetToForgot() {
-    Get.to(
+    Get.off(
       () => Forgotpass1(),
     );
   }
 
   navigetToForgotlogin() {
-    Get.to(
+    Get.off(
       () => Login(),
     );
   }
