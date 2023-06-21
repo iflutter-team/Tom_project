@@ -12,15 +12,15 @@ class Data {
   String? number;
   String? password;
   String? confirmPassword;
-  String? personalID;
+ // String? PersonalId;
 
-  Data({
-    this.name,
-    this.email,
-    this.number,
-    this.password,
-    this.confirmPassword,
-    this.personalID,
+  Data(
+      {this.name,
+      this.email,
+      this.number,
+      this.password,
+      this.confirmPassword,
+     // this.PersonalId
   });
 
   factory Data.fromJson(Map<String, dynamic> json) => Data(
@@ -29,7 +29,7 @@ class Data {
         number: json["number"],
         password: json["password"],
         confirmPassword: json["confirmPassword"],
-        personalID: json["personalID"],
+        //PersonalId: json["PersonalId"],
       );
 
   Map<String, dynamic> toJson() => {
@@ -38,6 +38,6 @@ class Data {
         "number": number,
         "password": password,
         "confirmPassword": confirmPassword,
-        "personalID": personalID,
+        //"PersonalId": PersonalId,
       };
 }

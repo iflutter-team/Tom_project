@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
+
+import 'Profile_controller.dart';
 
 Widget profiletitle1() {
   return Container(
@@ -23,12 +27,14 @@ Widget profiletitle1() {
 }
 
 Widget profiletitle2() {
-  return Text(
-    StringRes.profilestitle2,
-    style: const TextStyle(
-        color: ColorsRes.green1color,
-        fontWeight: FontWeight.bold,
-        fontSize: 25),
+  return GetBuilder<profilecontroller>(
+    builder: (controller) => Text(
+      controller.loginUser!.email.toString(),
+      style: const TextStyle(
+          color: ColorsRes.green1color,
+          fontWeight: FontWeight.bold,
+          fontSize: 25),
+    ),
   );
 }
 

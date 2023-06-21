@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/services/pref_service.dart';
+import 'package:tom_project/utils/PrefrenceRes.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
@@ -139,10 +141,8 @@ Widget Registernext() {
         minWidth: 300,
         color: const Color(0xFF227c3e),
         onPressed: () {
-          if (controller.right) {
-            controller.addData();
-            // controller.navigetToRegister();
-          }
+          Preferenceservices.setValue(PrefrenceRes.signupUser, true);
+          controller.addData();
         },
         child: Text(
           StringRes.Registeration1,
@@ -164,6 +164,7 @@ Widget Registeraccount() {
 Widget RegisterLogin() {
   return GetBuilder<RegisterController>(
       builder: (controller) => TextButton(
-          onPressed: () => controller.navigetToRegistrationLogin(),
+          onPressed: () {},
+          //() => controller.navigetToRegistrationLogin(),
           child: Text(StringRes.RegisterLogin)));
 }

@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/model/tom_model.dart';
 import 'package:tom_project/screen/BottomNavigationBar1/Data_controller.dart';
-import 'package:tom_project/screen/Registration%20page%202/Registration_screen.dart';
 import 'package:tom_project/screen/login/Login_screen.dart';
-import 'package:tom_project/screen/under%20review/Under_screen.dart';
 import 'package:tom_project/services/pref_service.dart';
 import 'package:tom_project/utils/PrefrenceRes.dart';
 
@@ -25,26 +23,21 @@ class RegisterController extends GetxController {
       "number": emailcontroller.text,
       "password": passcontroller.text,
       "confirmPassword": confirmpasscontroller.text,
-      "personalID": Idcontroller.text,
+      //"personalID": Idcontroller.text,
     };
     Data userdata = Data.fromJson(user);
     String userString = Preferenceservices.getString(PrefrenceRes.userlist);
     if (userString != '') {
       userList = dataFromJson(userString);
       userList.add(userdata);
-      Get.off(() => Login());
+      Get.to(() => Login());
     } else {
+      Get.snackbar("please Enter Vaild Details", "Signup");
       userList.add(userdata);
     }
     userString = dataToJson(userList);
     Preferenceservices.setValue(PrefrenceRes.userlist, userString);
   }
-
-  // void navigetToRegister() {
-  //   Get.off(
-  //     () => underscreen(),
-  //   );
-  // }
 
   void navigetToRegistrationLogin() {
     Get.off(

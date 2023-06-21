@@ -38,15 +38,9 @@ class LoginController extends GetxController {
         Get.snackbar("incorrect Details", "please enter valid details");
       }
     } else {
-      Get.snackbar("please Signup", "Error");
+      Get.snackbar("please Signup", "please Signup");
     }
   }
-
-  // void navigetToLoginscreen() {
-  //   Get.to(
-  //     () => Bottomhello(),
-  //   );
-  // }
 
   navigetToRegister() {
     Get.off(

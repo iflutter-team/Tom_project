@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
-import 'package:tom_project/services/pref_service.dart';
-import 'package:tom_project/utils/PrefrenceRes.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 import 'package:get/get.dart';
@@ -72,22 +70,34 @@ Widget logincheck() {
   );
 }
 
-Widget loginbutton() {
+// Widget loginbutton() {
+//   return GetBuilder<LoginController>(
+//     builder: (controller) => MaterialButton(
+//       minWidth: 300,
+//       color: const Color(0xFF227c3e),
+//       onPressed: () {
+//         controller.check();
+//       },
+//       child: Text(
+//         StringRes.logintitle1,
+//         style: const TextStyle(color: Colors.white),
+//       ),
+//     ),
+//   );
+// }
+
+Widget loginButton() {
   return GetBuilder<LoginController>(
-    builder: (controller) => MaterialButton(
-      minWidth: 300,
-      color: const Color(0xFF227c3e),
-      //onPressed: controller.navigetToLoginscreen,
-      onPressed: () {
-        if (controller.Hello) {
-          Preferenceservices.setValue(PrefrenceRes.signupUser, true);
-          controller.check();
-          // controller.navigetToLoginscreen();
-        }
-      },
-      child: Text(
-        StringRes.logintitle1,
-        style: const TextStyle(color: Colors.white),
+    builder: (controller) => Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: MaterialButton(
+        minWidth: 300,
+        color: const Color(0xFF227c3e),
+        onPressed: () => controller.check(),
+        child: Text(
+          StringRes.logintitle1,
+          style: const TextStyle(color: Colors.white),
+        ),
       ),
     ),
   );

@@ -1,9 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tom_project/screen/BottomNavigationBar1/Data_controller.dart';
 import 'package:tom_project/screen/Profile/Profile_screen_widget.dart';
 import 'package:tom_project/utils/string_res.dart';
 
+import '../BottomNavigationBar1/BottomNavigation_controller.dart';
+
 class Profiles extends StatelessWidget {
-  const Profiles({super.key});
+  Profiles({super.key});
+  final NavigationBarController navigationBarController =
+      Get.put(NavigationBarController());
+  final Datacontroller datacontroller = Get.put(Datacontroller());
 
   @override
   Widget build(BuildContext context) {

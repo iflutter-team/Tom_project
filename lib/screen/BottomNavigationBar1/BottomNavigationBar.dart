@@ -18,7 +18,7 @@ class Bottomhello extends StatelessWidget {
     const Homescreen(),
     productscreen(),
     const Orderscreen(),
-    const Profiles(),
+    Profiles(),
   ];
 
   @override
