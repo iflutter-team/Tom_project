@@ -17,6 +17,7 @@ class RegisterController extends GetxController {
   Datacontroller datacontroller = Get.put(Datacontroller());
 
   List<Data> userList = [];
+
   Future<void> addData() async {
     Map<String, dynamic> user = {
       "email": namecontroller.text,
@@ -25,18 +26,27 @@ class RegisterController extends GetxController {
       "confirmPassword": confirmpasscontroller.text,
       //"personalID": Idcontroller.text,
     };
-    Data userdata = Data.fromJson(user);
-    String userString = Preferenceservices.getString(PrefrenceRes.userlist);
-    if (userString != '') {
-      userList = dataFromJson(userString);
-      userList.add(userdata);
-      Get.to(() => Login());
+    bool isValidData = namecontroller.text.isNotEmpty &&
+        emailcontroller.text.isEmail &&
+        phonecontroller.text.isPhoneNumber &&
+        passcontroller.text.isNotEmpty &&
+        confirmpasscontroller.text.isNotEmpty;
+    if (isValidData) {
+      Data userdata = Data.fromJson(user);
+      String userString = Preferenceservices.getString(PrefrenceRes.userlist);
+      if (userString != '') {
+        userList = dataFromJson(userString);
+        userList.add(userdata);
+        Get.to(() => Login());
+      } else {
+        Get.snackbar("please Enter Vaild Details", "Signup");
+        userList.add(userdata);
+      }
+      userString = dataToJson(userList);
+      Preferenceservices.setValue(PrefrenceRes.userlist, userString);
     } else {
-      Get.snackbar("please Enter Vaild Details", "Signup");
-      userList.add(userdata);
+      Get.snackbar('sign up error', 'Enter valid Details');
     }
-    userString = dataToJson(userList);
-    Preferenceservices.setValue(PrefrenceRes.userlist, userString);
   }
 
   void navigetToRegistrationLogin() {
@@ -46,6 +56,7 @@ class RegisterController extends GetxController {
   }
 
   bool right = false;
+
   void change(bool val) {
     right = val;
     update(["right"]);

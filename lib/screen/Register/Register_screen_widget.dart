@@ -141,7 +141,7 @@ Widget Registernext() {
         minWidth: 300,
         color: const Color(0xFF227c3e),
         onPressed: () {
-          Preferenceservices.setValue(PrefrenceRes.signupUser, true);
+          //Preferenceservices.setValue(PrefrenceRes.signupUser, true);
           controller.addData();
         },
         child: Text(
