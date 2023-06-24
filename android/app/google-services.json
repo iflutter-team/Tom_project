@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "172768785519",
+    "project_id": "tom-project-5037f",
+    "storage_bucket": "tom-project-5037f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:172768785519:android:f797ff9e88469b172e099a",
+        "android_client_info": {
+          "package_name": "com.example.tom_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "172768785519-k2aoq4erm94ig33i2974fkilf7tb6utr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByPBo_pcPSATd-4nbnqvuEzuxFt-K_TAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "172768785519-k2aoq4erm94ig33i2974fkilf7tb6utr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

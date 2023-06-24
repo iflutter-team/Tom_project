@@ -38,6 +38,9 @@ dependencies:
   get: ^4.6.5
   http: ^0.13.5
   shared_preferences: ^2.1.1
+  firebase_core:
+  firebase_database:
+  firebase_auth:
 
 
 dev_dependencies:

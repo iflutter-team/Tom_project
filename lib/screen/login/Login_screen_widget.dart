@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
 import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/string_res.dart';
@@ -93,7 +94,7 @@ Widget loginButton() {
       child: MaterialButton(
         minWidth: 300,
         color: const Color(0xFF227c3e),
-        onPressed: () => controller.check(),
+        onPressed: () => Get.off(Bottomhello()),
         child: Text(
           StringRes.logintitle1,
           style: const TextStyle(color: Colors.white),
