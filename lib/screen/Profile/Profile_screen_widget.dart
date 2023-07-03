@@ -26,17 +26,17 @@ Widget profiletitle1() {
   );
 }
 
-Widget profiletitle2() {
-  return GetBuilder<profilecontroller>(
-    builder: (controller) => Text(
-      controller.loginUser!.email.toString(),
-      style: const TextStyle(
-          color: ColorsRes.green1color,
-          fontWeight: FontWeight.bold,
-          fontSize: 25),
-    ),
-  );
-}
+// Widget profiletitle2() {
+//   return GetBuilder<profilecontroller>(
+//     builder: (controller) => Text(
+//       controller.loginUser!.email.toString(),
+//       style: const TextStyle(
+//           color: ColorsRes.green1color,
+//           fontWeight: FontWeight.bold,
+//           fontSize: 25),
+//     ),
+//   );
+// }
 
 Widget profiletitle3() {
   return Text(

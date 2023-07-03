@@ -141,11 +141,7 @@ Widget Registernext() {
     builder: (controller) => MaterialButton(
         minWidth: 300,
         color: const Color(0xFF227c3e),
-        onPressed: () => controller.navigetToRegistrationLogin(),
-        //     () {
-        //   Preferenceservices.setValue(PrefrenceRes.signupUser, true);
-        //   controller.addData();
-        // },
+        onPressed:() => controller.navigetToRegistrationLogin(),
         child: Text(
           StringRes.Registeration1,
           style: const TextStyle(color: Colors.white),
@@ -166,6 +162,7 @@ Widget Registeraccount() {
 Widget RegisterLogin() {
   return GetBuilder<RegisterController>(
       builder: (controller) => TextButton(
-          onPressed: () => controller.navigetToRegistrationLogin(),
+          onPressed: (){},
+              //() => controller.navigetToRegistrationLogin(),
           child: Text(StringRes.RegisterLogin)));
 }

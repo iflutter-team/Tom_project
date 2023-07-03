@@ -10,9 +10,8 @@ class SplashScreenController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    bool islogin = Preferenceservices.getBool(PrefrenceRes.signupUser);
     Timer(const Duration(seconds: 2), () {
-      Get.off(() => islogin ? Bottomhello() : Login());
+      Get.off(() => Login());
     });
   }
 }

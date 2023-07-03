@@ -51,83 +51,81 @@ class Profiles extends StatelessWidget {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                const SizedBox(
-                  height: 10,
-                  width: 15,
-                ),
-                profiletitle1(),
-                const SizedBox(
-                  width: 25,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    profiletitle2(),
-                    profiletitle3(),
-                  ],
-                ),
-                const Spacer(),
-                profiletitle4(),
-              ],
-            ),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle5(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle6(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle7(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle8(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle9(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle10(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle11(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle12(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle13(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle14(),
-            const SizedBox(
-              height: 20,
-            ),
-            profiletitle15(),
-            const SizedBox(
-              height: 20,
-            ),
-            bankdetails(),
-            const SizedBox(
-              height: 20,
-            ),
-          ],
-        ),
+      body: Column(
+        children: [
+          // Row(
+          //   children: [
+          //     const SizedBox(
+          //       height: 10,
+          //       width: 15,
+          //     ),
+          //     profiletitle1(),
+          //     const SizedBox(
+          //       width: 25,
+          //     ),
+          //     Column(
+          //       crossAxisAlignment: CrossAxisAlignment.start,
+          //       children: [
+          //         profiletitle2(),
+          //         profiletitle3(),
+          //       ],
+          //     ),
+          //     const Spacer(),
+          //     profiletitle4(),
+          //   ],
+          // ),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle5(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle6(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle7(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle8(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle9(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle10(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle11(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle12(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle13(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle14(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // profiletitle15(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+          // bankdetails(),
+          // const SizedBox(
+          //   height: 20,
+          // ),
+        ],
       ),
     );
   }

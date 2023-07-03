@@ -12,42 +12,8 @@ class RegisterController extends GetxController {
   final TextEditingController phonecontroller = TextEditingController();
   final TextEditingController passcontroller = TextEditingController();
   final TextEditingController confirmpasscontroller = TextEditingController();
-  final TextEditingController Idcontroller = TextEditingController();
 
-  // Datacontroller datacontroller = Get.put(Datacontroller());
-  //
-  // List<Data> userList = [];
-  //
-  // Future<void> addData() async {
-  //   Map<String, dynamic> user = {
-  //     "email": namecontroller.text,
-  //     "number": emailcontroller.text,
-  //     "password": passcontroller.text,
-  //     "confirmPassword": confirmpasscontroller.text,
-  //     //"personalID": Idcontroller.text,
-  //   };
-  //   bool isValidData = namecontroller.text.isNotEmpty &&
-  //       emailcontroller.text.isEmail &&
-  //       phonecontroller.text.isPhoneNumber &&
-  //       passcontroller.text.isNotEmpty &&
-  //       confirmpasscontroller.text.isNotEmpty;
-  //   if (isValidData) {
-  //     Data userdata = Data.fromJson(user);
-  //     String userString = Preferenceservices.getString(PrefrenceRes.userlist);
-  //     if (userString != '') {
-  //       userList = dataFromJson(userString);
-  //       userList.add(userdata);
-  //       Get.to(() => Login());
-  //     } else {
-  //       Get.snackbar("please Enter Vaild Details", "Signup");
-  //       userList.add(userdata);
-  //     }
-  //     userString = dataToJson(userList);
-  //     Preferenceservices.setValue(PrefrenceRes.userlist, userString);
-  //   } else {
-  //     Get.snackbar('sign up error', 'Enter valid Details');
-  //   }
-  // }
+  Datacontroller datacontroller = Get.put(Datacontroller());
 
   void navigetToRegistrationLogin() {
     Get.off(
@@ -62,3 +28,4 @@ class RegisterController extends GetxController {
     update(["right"]);
   }
 }
+

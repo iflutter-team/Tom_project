@@ -24,10 +24,10 @@ class _FlashState extends State<Flash> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Imagesplash(),
-            SizedBox(
+           const  SizedBox(
               height: 20,
             ),
-            CircularProgressIndicator(),
+            const CircularProgressIndicator(),
           ],
         ),
       ),

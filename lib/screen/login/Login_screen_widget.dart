@@ -71,22 +71,6 @@ Widget logincheck() {
   );
 }
 
-// Widget loginbutton() {
-//   return GetBuilder<LoginController>(
-//     builder: (controller) => MaterialButton(
-//       minWidth: 300,
-//       color: const Color(0xFF227c3e),
-//       onPressed: () {
-//         controller.check();
-//       },
-//       child: Text(
-//         StringRes.logintitle1,
-//         style: const TextStyle(color: Colors.white),
-//       ),
-//     ),
-//   );
-// }
-
 Widget loginButton() {
   return GetBuilder<LoginController>(
     builder: (controller) => Padding(
@@ -94,7 +78,7 @@ Widget loginButton() {
       child: MaterialButton(
         minWidth: 300,
         color: const Color(0xFF227c3e),
-        onPressed: () => Get.off(Bottomhello()),
+         onPressed: () => Get.off(Bottomhello()),
         child: Text(
           StringRes.logintitle1,
           style: const TextStyle(color: Colors.white),

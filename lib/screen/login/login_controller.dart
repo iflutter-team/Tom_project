@@ -14,33 +14,7 @@ import 'package:tom_project/utils/PrefrenceRes.dart';
 class LoginController extends GetxController {
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController passcontroller = TextEditingController();
-
-  // Datacontroller datacontroller = Get.put(Datacontroller());
-  //
-  // List<Data> userList = [];
-  //
-  // Future<void> check() async {
-  //   String userString = Preferenceservices.getString(PrefrenceRes.userlist);
-  //   if (userString != '') {
-  //     userList = dataFromJson(userString);
-  //     bool value = userList.any((element) =>
-  //         element.email == emailcontroller.text &&
-  //         element.password == passcontroller.text);
-  //     if (value == true) {
-  //       int index = userList.indexWhere((element) =>
-  //           element.email == emailcontroller.text &&
-  //           element.password == passcontroller.text);
-  //       Data loginUser = userList[index];
-  //       Preferenceservices.setValue(
-  //           PrefrenceRes.loginUser, json.encode(loginUser.toJson()));
-  //       Get.off(() => Bottomhello());
-  //     } else {
-  //       Get.snackbar("incorrect Details", "please enter valid details");
-  //     }
-  //   } else {
-  //     Get.snackbar("please Signup", "please Signup");
-  //   }
-  // }
+  Datacontroller datacontroller = Get.put(Datacontroller());
 
   navigetToRegister() {
     Get.off(
