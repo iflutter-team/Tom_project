@@ -1,7 +1,5 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tom_project/screen/login/Login_screen.dart';
 import 'package:tom_project/screen/splash%20screen/Splash_screen_widget.dart';
 import 'package:tom_project/screen/splash%20screen/Splash_scrren_controller.dart';
 

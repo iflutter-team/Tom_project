@@ -35,7 +35,7 @@ class Registerscreen extends StatelessWidget {
                     RegisterTextfiled3(),
                     RegisterTextfiled4(),
                     RegisterTextfiled5(),
-                    RegisterTextfiled6(),
+                    //RegisterTextfiled6(),
                     //RegisterTextfiled7(),
                     const SizedBox(
                       height: 10,

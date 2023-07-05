@@ -11,6 +11,9 @@ import 'package:get/get.dart';
 import 'package:tom_project/services/pref_service.dart';
 import 'package:tom_project/utils/PrefrenceRes.dart';
 
+import '../../services/firebase_service.dart';
+import '../../utils/firebase_res.dart';
+
 class LoginController extends GetxController {
   final TextEditingController emailcontroller = TextEditingController();
   final TextEditingController passcontroller = TextEditingController();
