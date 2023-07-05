@@ -2,17 +2,18 @@ import 'dart:async';
 
 import 'package:get/get.dart';
 import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
-import 'package:tom_project/screen/login/Login_screen.dart';
-import 'package:tom_project/services/pref_service.dart';
-import 'package:tom_project/utils/PrefrenceRes.dart';
+import '../../services/pref_service.dart';
+import '../../utils/PrefrenceRes.dart';
+import '../login/Login_screen.dart';
 
-class SplashScreenController extends GetxController {
+class SplashController extends GetxController {
   @override
   void onInit() {
-    super.onInit();
+    bool isLogin = PrefService.getBool(PrefRes.isSignup);
     Timer(const Duration(seconds: 2), () {
-     Get.off(() => Login());
-      //Get.off(() => isLogin ? Bottomhello() : Login());
+      //Get.off(LoginPage());
+      Get.off(() => isLogin ? Bottomhello() : LoginPage());
     });
+    super.onInit();
   }
 }

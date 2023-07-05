@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tom_project/screen/splash%20screen/Splash_screen_widget.dart';
-import 'package:tom_project/screen/splash%20screen/Splash_scrren_controller.dart';
 
-class Flash extends StatefulWidget {
-  const Flash({Key? key}) : super(key: key);
+import 'Splash_scrren_controller.dart';
 
-  @override
-  State<Flash> createState() => _FlashState();
-}
 
-class _FlashState extends State<Flash> {
-  SplashScreenController splashScreenController =
-      Get.put(SplashScreenController());
+class SplashPage extends StatelessWidget {
+  SplashPage({Key? key}) : super(key: key);
+
+  final SplashController splashController = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
@@ -21,14 +16,16 @@ class _FlashState extends State<Flash> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Imagesplash(),
+            Image.asset("assets/images/splash screen.png"),
            const  SizedBox(
               height: 20,
             ),
             const CircularProgressIndicator(),
           ],
         ),
-      ),
+         ),
     );
   }
 }
+
+

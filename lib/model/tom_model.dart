@@ -17,35 +17,33 @@ String userToJson(List<User> data) => json.encode(
 class User {
   String? id;
   String? name;
+  String? password;
   String? email;
   String? number;
-  String? password;
-
-
 
   User({
     this.id,
     this.name,
+    this.password,
     this.email,
     this.number,
-    this.password
   });
 
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       id: json["id"],
       name: json["name"],
+      password: json["password"],
       email: json["email"],
       number: json["number"],
-      password: json["password"],
     );
   }
 
   Map<String, dynamic> toJson() => {
     "id": id,
     "name": name,
+    "password": password,
     "email": email,
     "number": number,
-    "password": password,
   };
 }
