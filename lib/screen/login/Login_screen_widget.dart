@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../common/Textfiled.dart';
+import '../../services/pref_service.dart';
+import '../../utils/PrefrenceRes.dart';
 import '../../utils/asset_res.dart';
 import '../../utils/string_res.dart';
 import 'login_controller.dart';
@@ -49,9 +51,9 @@ Widget loginBody() {
                               controller.password.text.isNotEmpty
                       ){
                         controller.check();
-                        // PrefService.setValue(PrefRes.isSignup, true);
+                        PrefService.setValue(PrefRes.isSignup, true);
                       }else{
-                        Get.snackbar("Data is empty","please fill All data");
+                        Get.snackbar("Data is empty","please fill data");
                       }
                     },
                     style: ElevatedButton.styleFrom(
