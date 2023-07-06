@@ -6,6 +6,8 @@ import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
+import '../product/ProductData.dart';
+
 Widget deleteproduct() {
   return Container(
     height: 100,
@@ -35,8 +37,11 @@ Widget deletetext1() {
 
 Widget deletebutton() {
   return GetBuilder<deleteController>(
+    id: 'delete',
     builder: (controller) => MaterialButton(
-      onPressed: controller.addproduct,
+      onPressed: (){
+        controller.addproduct();
+      },
       color: ColorsRes.green1color,
       height: 40,
       //minWidth: d * 0.70,

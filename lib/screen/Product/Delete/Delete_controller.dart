@@ -9,6 +9,11 @@ class deleteController extends GetxController {
     );
   }
 
+  void navigetToback() {
+    Get.back();
+    update(['delete']);
+  }
+
   void cancelproduct() {
     Get.to(
       () => delete(),

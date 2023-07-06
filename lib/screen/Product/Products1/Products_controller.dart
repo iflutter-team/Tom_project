@@ -7,4 +7,9 @@ class Productscontroller extends GetxController {
       () => Addproduct(),
     );
   }
+
+  void navigetToback() {
+    Get.back();
+    update(['back']);
+  }
 }

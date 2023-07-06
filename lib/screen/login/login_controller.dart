@@ -1,32 +1,4 @@
-// import 'package:flutter/material.dart';
-// import 'package:tom_project/screen/Forgot%20pass/Forgot_pass.dart';
-// import 'package:tom_project/screen/Register/Register_screen.dart';
-// import 'package:get/get.dart';
-//
-// class LoginController extends GetxController {
-//   final TextEditingController emailcontroller = TextEditingController();
-//   final TextEditingController passcontroller = TextEditingController();
-//
-//   navigetToRegister() {
-//     Get.off(
-//       () => Registerscreen(),
-//     );
-//   }
-//
-//   void navigetToForgot() {
-//     Get.off(
-//       () => Forgot(),
-//     );
-//   }
-//
-//   bool Hello = false;
-//   void change(bool val) {
-//     Hello = val;
-//     update(["change"]);
-//   }
-// }
-//
-//
+
 import 'dart:convert';
 
 import 'package:flutter/material.dart';

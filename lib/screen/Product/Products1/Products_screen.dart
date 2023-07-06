@@ -10,13 +10,14 @@ class Products extends StatelessWidget {
   Widget build(BuildContext context) {
     Get.put(Productscontroller());
     return Scaffold(
-      body: Center(
+      body:  Center(
         child: Column(
           children: [
             const SizedBox(
               height: 10,
             ),
-            productsList(),
+          // products(),
+           productsList(),
           ],
         ),
       ),

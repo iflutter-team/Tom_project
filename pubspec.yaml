@@ -39,6 +39,7 @@ dependencies:
   shared_preferences:
   firebase_core:
   firebase_database:
+  lottie: ^2.4.0
 
 
 dev_dependencies:
@@ -83,6 +84,11 @@ flutter:
     - assets/images/strawberry.png
     - assets/images/Alert Icon.png
     - assets/images/drawer.png
+    - assets/Products/Apple.png
+    - assets/Products/green apple.png
+    - assets/Products/Orange.png
+    - assets/Products/Pineapple.png
+    - assets/Products/Strawberry.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
 
