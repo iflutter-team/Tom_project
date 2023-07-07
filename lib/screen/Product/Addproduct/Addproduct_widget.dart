@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/common/Textfiled.dart';
 import 'package:tom_project/screen/Product/Addproduct/Addproduct_controller.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
@@ -15,227 +16,63 @@ Widget Iconarrowback() {
   );
 }
 
-Widget Texttitle() {
-  return Text(
-    StringRes.TextProductImage,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget ProductImage() {
-  return Container(
-    height: 80,
-    width: 80,
-    decoration: BoxDecoration(
-      border: Border.all(
-          width: 2,
-          strokeAlign: BorderSide.strokeAlignInside,
-          color: ColorsRes.green1color),
-      borderRadius: const BorderRadius.all(Radius.circular(10)),
-    ),
-    child: const Center(
-      child: Icon(
-        Icons.camera_alt_outlined,
-        size: 25,
-        color: ColorsRes.green1color,
+Widget product(){
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      const SizedBox(height: 30),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.discount, "Discount",);
+        },
       ),
-    ),
-  );
-}
-
-Widget Texttitle1() {
-  return Text(
-    StringRes.TextProductName,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+      const SizedBox(height: 20),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.Stock, "Stock",);
+        },
       ),
-    ),
-  );
-}
-
-Widget Texttitle2() {
-  return Text(
-    StringRes.TextSelectCategory,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled2() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        suffixIcon:
-            IconButton(onPressed: () {}, icon: Icon(Icons.arrow_drop_down)),
+      const SizedBox(height: 30),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.image, "Image URL",);
+        },
       ),
-    ),
-  );
-}
-
-Widget Texttitle3() {
-  return Text(
-    StringRes.TextRegularPrice,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget Texttitle4() {
-  return Text(
-    StringRes.TextSellingPrice,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled3() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+      const SizedBox(height: 20),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.Products, "Products",);
+        },
       ),
-    ),
-  );
-}
-
-Widget addtextfiled4() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
+      const SizedBox(height: 20),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.review, "review",);
+        },
       ),
-    ),
+    ],
   );
 }
 
-Widget Texttitle5() {
-  return Text(
-    StringRes.TextStock,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled5() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-          border: const OutlineInputBorder(),
-          suffixIcon: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                height: 30,
-                width: 30,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.green, width: 2),
-                    borderRadius: BorderRadius.circular(10)),
-                child: const Icon(Icons.add, color: Colors.green),
-              ),
-              Container(
-                height: 30,
-                width: 30,
-                margin: const EdgeInsets.symmetric(horizontal: 4),
-                alignment: Alignment.center,
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.green, width: 2),
-                    borderRadius: BorderRadius.circular(10)),
-                child: const Icon(Icons.remove, color: Colors.green),
-              ),
-            ],
-          )),
-    ),
-  );
-}
-
-Widget Texttitle6() {
-  return Text(
-    StringRes.Textunit,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled6() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-      ),
-    ),
-  );
-}
-
-Widget Texttitle7() {
-  return Text(
-    StringRes.TextProductDescription,
-    style: const TextStyle(
-      color: ColorsRes.green1color,
-      fontSize: 20,
-    ),
-  );
-}
-
-Widget addtextfiled7() {
-  return Padding(
-    padding: const EdgeInsets.all(8),
-    child: TextField(
-      decoration: InputDecoration(
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-      ),
-    ),
-  );
-}
 
 Widget addproduct() {
   return GetBuilder<addproductcontroller>(
     builder: (controller) => Padding(
       padding: const EdgeInsets.all(0),
       child: MaterialButton(
-        onPressed: () {},
+        onPressed: () {
+          if(
+          controller.discount.text.isNotEmpty&&
+              controller.Stock.text.isNotEmpty&&
+              controller.image.text.isNotEmpty&&
+              controller.Products.text.isNotEmpty&&
+              controller.review.text.isNotEmpty
+          ){
+            controller.navigetToProducts();
+          }else{
+            Get.snackbar("Data is empty","please fill All data");
+          }
+        },
         color: Colors.green,
         child: Text(
           StringRes.TextAddProduct,
@@ -246,19 +83,4 @@ Widget addproduct() {
   );
 }
 
-Widget dropdownbutton() {
-  return GetBuilder<addproductcontroller>(
-    builder: (controller) => DropdownButton(
-        isExpanded: true,
-        style: const TextStyle(color: ColorsRes.blackcolor, fontSize: 15),
-        iconSize: 30,
-        borderRadius: BorderRadius.circular(15),
-        focusColor: Colors.green,
-        value: controller.vandan,
-        items: controller.items,
-        onChanged: (value) {
-          controller.vandan = value.toString();
-          controller.update();
-        }),
-  );
-}
+

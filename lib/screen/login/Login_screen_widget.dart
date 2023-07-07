@@ -56,7 +56,7 @@ Widget loginBody() {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF227c3e),
+                      backgroundColor:  const Color(0xFF227c3e),
                     ),
                     child: Text(
                       StringRes.logintitle1,
@@ -66,15 +66,15 @@ Widget loginBody() {
             },
           ),
           const SizedBox(height: 20),
-          GetBuilder<LoginController>(
-            builder: (controller) {
-              return TextButton(
-                  onPressed: (){},
-                  child: Text(
-                    StringRes.loginpass,
-                  ));
-            },
-          ),
+          // GetBuilder<LoginController>(
+          //   builder: (controller) {
+          //     return TextButton(
+          //         onPressed: (){},
+          //         child: Text(
+          //           StringRes.loginpass,
+          //         ));
+          //   },
+          // ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [

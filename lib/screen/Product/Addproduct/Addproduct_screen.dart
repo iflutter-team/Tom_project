@@ -21,94 +21,9 @@ class Addproduct extends StatelessWidget {
         ),
         centerTitle: true,
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Texttitle(),
-            const SizedBox(
-              height: 15,
-            ),
-            ProductImage(),
-            const SizedBox(
-              height: 15,
-            ),
-            Texttitle1(),
-            const SizedBox(
-              height: 10,
-            ),
-            addtextfiled(),
-            const SizedBox(
-              height: 10,
-            ),
-            Texttitle2(),
-            const SizedBox(
-              height: 10,
-            ),
-            //addtextfiled2(),
-            dropdownbutton(),
-            const SizedBox(
-              height: 10,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                SizedBox(
-                  height: 100,
-                  width: Get.width * 0.45,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Texttitle3(),
-                      addtextfiled2(),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 100,
-                  width: Get.width * 0.45,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Texttitle4(),
-                      addtextfiled3(),
-                    ],
-                  ),
-                )
-              ],
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                SizedBox(
-                  height: 100,
-                  width: Get.width * 0.45,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Texttitle5(),
-                      addtextfiled5(),
-                    ],
-                  ),
-                ),
-                SizedBox(
-                  height: 100,
-                  width: Get.width * 0.45,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Texttitle6(),
-                      addtextfiled6(),
-                    ],
-                  ),
-                ),
-              ],
-            ),
-            Texttitle7(),
-            addtextfiled7(),
-          ],
+      body:  SingleChildScrollView(
+        child: product(),
         ),
-      ),
       bottomNavigationBar: addproduct(),
     );
   }

@@ -65,7 +65,7 @@ Widget signupBoyd() {
                       }
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: const Color(0xFF227c3e),
+                      backgroundColor:  const Color(0xFF227c3e),
                     ),
                   child: Text(
                     StringRes.Registeration1,
