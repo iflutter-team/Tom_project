@@ -78,7 +78,7 @@ Widget productsList() {
                                       ),
                                       TextButton(
                                         onPressed: () {
-                                          controller.product.removeAt(index);
+                                         // controller.product.removeAt(index);
                                           controller.navigetToback();
                                         },
                                         child: const Text('Ok'),

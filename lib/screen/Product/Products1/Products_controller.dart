@@ -1,7 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Product/Addproduct/Addproduct_screen.dart';
-import 'package:tom_project/screen/Product/Delete/Delete_screen.dart';
 
 class Productscontroller extends GetxController {
   DatabaseReference database = FirebaseDatabase.instance.ref("productdata");

@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/common/Textfiled.dart';
 import 'package:tom_project/screen/Product/Addproduct/Addproduct_controller.dart';
-import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
 Widget Iconarrowback() {
   return GetBuilder<addproductcontroller>(
+    id:  'add',
     builder: (controller) => IconButton(
         onPressed: controller.navigetToProducts,
         icon: const Icon(
@@ -47,7 +47,7 @@ Widget product(){
       const SizedBox(height: 20),
       GetBuilder<addproductcontroller>(
         builder: (controller) {
-          return textFieldCommon(controller.review, "review",);
+          return textFieldCommon(controller.review, "pr",);
         },
       ),
     ],
@@ -57,6 +57,7 @@ Widget product(){
 
 Widget addproduct() {
   return GetBuilder<addproductcontroller>(
+    id: 'add',
     builder: (controller) => Padding(
       padding: const EdgeInsets.all(0),
       child: MaterialButton(
@@ -68,7 +69,7 @@ Widget addproduct() {
               controller.Products.text.isNotEmpty&&
               controller.review.text.isNotEmpty
           ){
-            controller.navigetToProducts();
+            controller.insertData();
           }else{
             Get.snackbar("Data is empty","please fill All data");
           }
@@ -82,5 +83,3 @@ Widget addproduct() {
     ),
   );
 }
-
-

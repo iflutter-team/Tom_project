@@ -14,5 +14,27 @@ class addproductcontroller extends GetxController {
     Get.off(
       () => Bottomhello(),
     );
+    update(["add"]);
+  }
+
+
+  Future<void> insertData() async {
+    DatabaseReference database = FirebaseDatabase.instance.ref("productdata");
+    String? key  = database.push().key;
+    await database.child(key!).set({
+      "discount": discount.text,
+      "Stock": Stock.text,
+      "image": image.text,
+      "Products": Products.text,
+      "pr": review.text,
+    }).whenComplete(() {
+      Get.back();
+      discount.clear();
+      Stock.clear();
+      image.clear();
+      Products.clear();
+      review.clear();
+     update(["add"]);
+    });
   }
 }
