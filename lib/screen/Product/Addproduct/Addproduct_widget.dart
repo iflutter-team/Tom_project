@@ -6,7 +6,7 @@ import 'package:tom_project/utils/string_res.dart';
 
 Widget Iconarrowback() {
   return GetBuilder<addproductcontroller>(
-    id:  'add',
+    id:  'update',
     builder: (controller) => IconButton(
         onPressed: controller.navigetToProducts,
         icon: const Icon(
@@ -41,13 +41,13 @@ Widget product(){
       const SizedBox(height: 20),
       GetBuilder<addproductcontroller>(
         builder: (controller) {
-          return textFieldCommon(controller.Products, "Products",);
+          return textFieldCommon(controller.Products, "Product Name",);
         },
       ),
       const SizedBox(height: 20),
       GetBuilder<addproductcontroller>(
         builder: (controller) {
-          return textFieldCommon(controller.review, "pr",);
+          return textFieldCommon(controller.Review, "Review",);
         },
       ),
     ],
@@ -57,7 +57,7 @@ Widget product(){
 
 Widget addproduct() {
   return GetBuilder<addproductcontroller>(
-    id: 'add',
+    id: 'newproduct',
     builder: (controller) => Padding(
       padding: const EdgeInsets.all(0),
       child: MaterialButton(
@@ -67,7 +67,7 @@ Widget addproduct() {
               controller.Stock.text.isNotEmpty&&
               controller.image.text.isNotEmpty&&
               controller.Products.text.isNotEmpty&&
-              controller.review.text.isNotEmpty
+              controller.Review.text.isNotEmpty
           ){
             controller.insertData();
           }else{

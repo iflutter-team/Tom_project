@@ -30,7 +30,7 @@ Widget signupBoyd() {
               const SizedBox(height: 20),
               GetBuilder<SignupController>(
                 builder: (controller) {
-                  return textFieldCommon(controller.number, "Number",prefixIcon: const Icon(Icons.phone));
+                  return textFieldCommon(controller.number, "Number",prefixIcon: const Icon(Icons.phone),);
                 },
               ),
               const SizedBox(height: 30),

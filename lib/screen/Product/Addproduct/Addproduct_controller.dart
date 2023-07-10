@@ -8,13 +8,13 @@ class addproductcontroller extends GetxController {
   TextEditingController Stock = TextEditingController();
   TextEditingController image = TextEditingController();
   TextEditingController Products = TextEditingController();
-  TextEditingController review = TextEditingController();
+  TextEditingController Review = TextEditingController();
 
   void navigetToProducts() {
     Get.off(
       () => Bottomhello(),
     );
-    update(["add"]);
+    update(["update"]);
   }
 
 
@@ -26,15 +26,15 @@ class addproductcontroller extends GetxController {
       "Stock": Stock.text,
       "image": image.text,
       "Products": Products.text,
-      "pr": review.text,
+      "Review": Review.text,
     }).whenComplete(() {
       Get.back();
+      update(["newproduct"]);
       discount.clear();
       Stock.clear();
       image.clear();
       Products.clear();
-      review.clear();
-     update(["add"]);
+      Review.clear();
     });
   }
 }

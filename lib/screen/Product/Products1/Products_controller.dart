@@ -4,7 +4,7 @@ import 'package:tom_project/screen/Product/Addproduct/Addproduct_screen.dart';
 
 class Productscontroller extends GetxController {
   DatabaseReference database = FirebaseDatabase.instance.ref("productdata");
-  List product = [];
+ // List product = [];
 
   void navigetToAddproduct() {
     Get.to(
@@ -16,22 +16,21 @@ class Productscontroller extends GetxController {
     Get.back();
     update(['back']);
   }
-
-  @override
-  void onInit() {
-    dataShow();
-    update(['back']);
-    super.onInit();
-  }
-
-  Future<void> dataShow() async {
-   await database.once().then(
-      (value) {
-        List show = value.snapshot.value as List;
-        print(show);
-        product=show;
-        update(['back']);
-      },
-    );
-  }
+  //
+  // @override
+  // void onInit() {
+  //   dataShow();
+  //   update(['back']);
+  //   super.onInit();
+  // }
+  //
+  // Future<void> dataShow() async {
+  //  await database.once().then(
+  //     (value) {
+  //       List show = value.snapshot.value as List;
+  //       product=show;
+  //       update(['back']);
+  //     },
+  //   );
+  // }
 }

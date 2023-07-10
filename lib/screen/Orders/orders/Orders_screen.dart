@@ -17,27 +17,11 @@ class Orderscreen extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          leading: IconButton(
-            onPressed: () {},
-            icon: const Icon(
-              Icons.arrow_back_ios,
-              color: Colors.green,
-            ),
-          ),
           centerTitle: true,
           title: Text(
             StringRes.title,
             style: const TextStyle(fontSize: 20, color: Colors.green),
           ),
-          actions: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(
-                Icons.menu,
-                color: Colors.green,
-              ),
-            )
-          ],
           bottom: PreferredSize(
             preferredSize: const Size(double.infinity, 20),
             child: Column(

@@ -1,32 +1,38 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
+
 
 class profilecontroller extends GetxController {
-  final TextEditingController namecontroller = TextEditingController();
-  final TextEditingController emailcontroller = TextEditingController();
-  final TextEditingController phonecontroller = TextEditingController();
-  final TextEditingController passcontroller = TextEditingController();
-  final TextEditingController confirmpasscontroller = TextEditingController();
-  final TextEditingController Idcontroller = TextEditingController();
 
-  // Datacontroller datacontroller = Get.put(Datacontroller());
+  File? file;
+
+  picimage() async {
+    final ImagePicker _picker = ImagePicker();
+    final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+    file = File(image!.path);
+    update(['Image']);
+  }
+
   //
-  // Data? loginUser;
-  // List<Data>? userList;
+  // User? loginUser;
+  // List<User>? userList;
   //
   // @override
   // void onInit() {
-  //   getLoginUser();
-  //   getAllUser();
+  //  getLoginUser();
+  //   //getAllUser();
   //   super.onInit();
   // }
   //
   // void getLoginUser() {
   //   String loginUserstring =
-  //       Preferenceservices.getString(PrefrenceRes.loginUser);
-  //   loginUser = Data.fromJson(json.decode(loginUserstring));
+  //       PrefService.getString(PrefRes.loginUser);
+  //   loginUser = User.fromJson(json.decode(loginUserstring));
   // }
-  //
+
   // void getAllUser() {
   //   String alluserstring = Preferenceservices.getString(PrefrenceRes.userlist);
   //   userList = dataFromJson(alluserstring);

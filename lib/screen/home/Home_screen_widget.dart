@@ -817,76 +817,95 @@ Widget Homelist() {
 }
 
 Widget drawer() {
-  return Drawer(
-    child: Column(
-      children: [
-        Container(
-          height: 100,
-          width: 350,
-          color: Colors.grey.shade200,
-          child: Row(
-            children: [
-              Image.asset(ImageRes.drawer),
-            ],
-          ),
+  return GetBuilder<Homecontroller>(
+    builder: (controller) =>  Drawer(
+      child: SafeArea(
+        child: Column(
+          children: [
+            Container(
+              height: 100,
+              width: 350,
+              color: Colors.grey.shade200,
+              child: Row(
+                children: [
+                  Image.asset(ImageRes.drawer),
+                ],
+              ),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer1,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () {},
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer2,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () {},
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer3,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () {},
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer4,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () {},
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer5,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () => Get.to(const faqsscreen()),
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer6,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () => Get.to(const PrivacyPolicy()),
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            ListTile(
+              title: Text(
+                StringRes.drawer7,
+                style: const TextStyle(color: ColorsRes.green1color),
+              ),
+              onTap: () => Get.to(const termsconditionsScreen()),
+              leading: const Icon(Icons.keyboard_arrow_down),
+            ),
+            const Spacer(),
+            SizedBox(
+              height: 50,
+              width: 350,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  ),
+                  onPressed: controller.navigetTologin,
+                  child: Text(
+                    StringRes.drawerlogout,
+                    style: const TextStyle(color: ColorsRes.green1color,fontSize: 20),
+                  ),
+              ),
+            ),
+          ],
         ),
-        ListTile(
-          title: Text(
-            StringRes.drawer1,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () {},
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer2,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () {},
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer3,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () {},
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer4,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () {},
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer5,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () => Get.to(const faqsscreen()),
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer6,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () => Get.to(const PrivacyPolicy()),
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-        ListTile(
-          title: Text(
-            StringRes.drawer7,
-            style: const TextStyle(color: ColorsRes.green1color),
-          ),
-          onTap: () => Get.to(const termsconditionsScreen()),
-          leading: const Icon(Icons.keyboard_arrow_down),
-        ),
-      ],
+      ),
     ),
   );
 }

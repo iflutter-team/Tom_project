@@ -213,34 +213,14 @@ class StringRes {
   static String profilestitle1 = "Profile Details";
   static String profilestitle2 = "Ankur patel";
   static String profilestitle3 = "@ankur_121";
-  static String profilestitle4 = "Gender";
-  static String profilestitle5 = "Male";
-  static String profilestitle6 = "Birthday";
-  static String profilestitle7 = "24/10/2004";
-  static String profilestitle8 = "Email";
-  static String profilestitle9 = "rex4dom@gmail.com";
-  static String profilestitle10 = "Phone Number";
-  static String profilestitle11 = "78925-99255";
-  static String profilestitle12 = "Upload certificate";
-  static String profilestitle17 = "Upload";
-  static String profilestitle13 = "Change Password";
-  static String profilestitle14 = "GST Number";
-  static String profilestitle15 = "Company Address";
-  static String profilestitle16 = "Bank Details";
-
-////----------------------Bank Details product-------------------------------///
-  static String bankDetails1 = "Bank Name:- ";
-  static String bankDetails2 = "HDFC Bank";
-  static String bankDetails3 = "Branch Name:- ";
-  static String bankDetails4 = "Memnagar";
-  static String bankDetails5 = "IFSC Code:- ";
-  static String bankDetails6 = "HDFC2FO4";
-  static String bankDetails7 = "Account Holder:- ";
-  static String bankDetails8 = "xyz";
-  static String bankDetails9 = "Account No:- ";
-  static String bankDetails10 = "1237-5678-8901-2345";
-  static String bankDetails11 = "Account Type:- ";
-  static String bankDetails12 = "Saving";
+  static String profilestitle4 = "Birthday";
+  static String profilestitle5 = "24/10/2004";
+  static String profilestitle6 = "Email";
+  static String profilestitle7 = "rex4dom@gmail.com";
+  static String profilestitle8 = "Phone Number";
+  static String profilestitle9 = "78925-99255";
+  static String profilestitle10 = "Username";
+  static String profilestitle11 = "Change Password";
 
   ///-----------------------faqsscreen---------------------------------------------///
   static String faqsscreen1 = "FAQs";
