@@ -6,7 +6,7 @@ import 'package:tom_project/services/pref_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-   await Firebase.initializeApp();
+  await Firebase.initializeApp();
    await PrefService.init();
   runApp(GetMaterialApp(
     theme: ThemeData(primarySwatch: Colors.green),

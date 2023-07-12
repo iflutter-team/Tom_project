@@ -1,10 +1,39 @@
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Product/Addproduct/Addproduct_screen.dart';
 
+import '../../viewproduct/view_product_screen.dart';
+
 class Productscontroller extends GetxController {
   DatabaseReference database = FirebaseDatabase.instance.ref("productdata");
- // List product = [];
+
+  int counter = 0;
+
+  void add() {
+      counter++;
+      print(counter);
+      update(['add']);
+  }
+
+  void hello() {
+      if (counter != 1) {
+        counter--;
+        print(counter);
+      }
+      update(['add']);
+  }
+
+  // void navigetToview(String index) {
+  //   Get.to(
+  //         () => view(image: index,),
+  //   );
+  // }
+  void navigetToview( ) {
+    Get.to(
+          () => view(),
+    );
+  }
 
   void navigetToAddproduct() {
     Get.to(
@@ -16,21 +45,4 @@ class Productscontroller extends GetxController {
     Get.back();
     update(['back']);
   }
-  //
-  // @override
-  // void onInit() {
-  //   dataShow();
-  //   update(['back']);
-  //   super.onInit();
-  // }
-  //
-  // Future<void> dataShow() async {
-  //  await database.once().then(
-  //     (value) {
-  //       List show = value.snapshot.value as List;
-  //       product=show;
-  //       update(['back']);
-  //     },
-  //   );
-  // }
 }

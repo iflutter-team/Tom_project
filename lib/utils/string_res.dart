@@ -221,6 +221,8 @@ class StringRes {
   static String profilestitle9 = "78925-99255";
   static String profilestitle10 = "Username";
   static String profilestitle11 = "Change Password";
+  static String edit = "Tap to Edit Profile";
+
 
   ///-----------------------faqsscreen---------------------------------------------///
   static String faqsscreen1 = "FAQs";

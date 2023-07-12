@@ -2,25 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
-// Widget category() {
-//   return Expanded(
-//     child: GridView.builder(
-//       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-//         crossAxisCount: 2,
-//         childAspectRatio: 0.7,
-//         crossAxisSpacing: 10,
-//       ),
-//       itemCount: 6,
-//       itemBuilder: (context, index) => ShowProduct(
-//         discount: 10,
-//         image: ImageRes.Category,
-//         inStock: false,
-//         productname: StringRes.TextCategory,
-//       ),
-//     ),
-//   );
-// }
-
 Widget product1() {
   return Container(
     margin: const EdgeInsets.all(5),
@@ -40,7 +21,7 @@ Widget product1() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: AssetImage("assets/Products/Apple.png"),
             ),
           ),
         ),
@@ -69,7 +50,7 @@ Widget product2() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: AssetImage("assets/Products/green apple.png"),
             ),
           ),
         ),
@@ -98,7 +79,7 @@ Widget product3() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: AssetImage("assets/Products/Orange.png"),
             ),
           ),
         ),
@@ -127,7 +108,7 @@ Widget product4() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: AssetImage("assets/Products/Pineapple.png"),
             ),
           ),
         ),
@@ -156,7 +137,7 @@ Widget product5() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: AssetImage("assets/Products/Strawberry.png"),
             ),
           ),
         ),
@@ -185,7 +166,7 @@ Widget product6() {
             color: Colors.white,
             borderRadius: BorderRadius.circular(30),
             image: const DecorationImage(
-              image: AssetImage("assets/images/strawberry.png"),
+              image: NetworkImage("https://images.unsplash.com/photo-1528821128474-27f963b062bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"),
             ),
           ),
         ),

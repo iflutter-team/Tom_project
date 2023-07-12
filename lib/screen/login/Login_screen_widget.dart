@@ -50,7 +50,7 @@ Widget loginBody() {
                               controller.password.text.isNotEmpty
                       ){
                         controller.check();
-                        PrefService.setValue(PrefRes.isSignup, true);
+                       // PrefService.setValue(PrefRes.isSignup, true);
                       }else{
                         Get.snackbar("Data is empty","please fill data");
                       }
