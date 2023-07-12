@@ -14,24 +14,26 @@ import '../../model/tom_model.dart';
 class profilecontroller extends GetxController {
   File? file;
 
-  User? loginUser;
-  List<User>? allUserList = [];
-  String? loginUserKey = '';
+  final ref = FirebaseDatabase.instance.ref('User');
 
-  @override
-  void onInit() {
-    getLoginUserDataForHomeScreen();
-    // TODO: implement onInit
-    super.onInit();
-  }
-
-  Future<void> getLoginUserDataForHomeScreen() async {
-    DatabaseReference reference = FirebaseDatabase.instance
-        .ref(FirebaseRes.allSignUpUsersFirebaseKey);
-    await reference
-        .child(PrefService.getString(PrefRes.loginUserKey))
-        .get();
-  }
+  // User? loginUser;
+  // List<User>? allUserList = [];
+  // String? loginUserKey = '';
+  //
+  // @override
+  // void onInit() {
+  //   getLoginUserDataForHomeScreen();
+  //   // TODO: implement onInit
+  //   super.onInit();
+  // }
+  //
+  // Future<void> getLoginUserDataForHomeScreen() async {
+  //   DatabaseReference reference = FirebaseDatabase.instance
+  //       .ref(FirebaseRes.allSignUpUsersFirebaseKey);
+  //   await reference
+  //       .child(PrefService.getString(PrefRes.loginUserKey))
+  //       .get();
+  // }
 
 
   Future<void> onTapSelectImage() async {

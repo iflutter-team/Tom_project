@@ -1,3 +1,4 @@
+import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Profile/Profile_controller.dart';
@@ -90,8 +91,8 @@ Widget update() {
             ),
             const Spacer(),
             Text(
-             controller.loginUser!.name.toString(),
-              //StringRes.profilestitle3,
+             //controller.loginUser!.name.toString(),
+              StringRes.profilestitle3,
               style: TextStyle(
                   color: Colors.grey.shade400,
                   fontWeight: FontWeight.bold,
@@ -246,5 +247,200 @@ Widget update() {
         ),
       ],
     ),
+  );
+}
+
+Widget Profile(){
+  return GetBuilder<profilecontroller>(
+      builder: (controller) => Expanded(
+        child: FirebaseAnimatedList(
+            query: controller.ref,
+            itemBuilder: (context, snapshot, animation, index){
+              return Column(
+                children: [
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Icon(
+                        Icons.account_circle,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        StringRes.profilestitle10,
+                        style: const TextStyle(
+                            color: ColorsRes.green1color,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      ),
+                      const Spacer(),
+                      Text(
+                        //controller.loginUser!.name.toString(),
+                        snapshot.child('name').value.toString(),
+                        style: TextStyle(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Icon(
+                        Icons.cake,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        StringRes.profilestitle4,
+                        style: const TextStyle(
+                            color: ColorsRes.green1color,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      ),
+                      const Spacer(),
+                      Text(
+                        StringRes.profilestitle5,
+                        style: TextStyle(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Icon(
+                        Icons.email_outlined,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        StringRes.profilestitle6,
+                        style: const TextStyle(
+                            color: ColorsRes.green1color,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      ),
+                      const Spacer(),
+                      Text(
+                        snapshot.child('email').value.toString(),
+                        style: TextStyle(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Icon(
+                        Icons.phone_android_outlined,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        StringRes.profilestitle8,
+                        style: const TextStyle(
+                            color: ColorsRes.green1color,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      ),
+                      const Spacer(),
+                      Text(
+                        snapshot.child('number').value.toString(),
+                        style: TextStyle(
+                            color: Colors.grey.shade400,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 13),
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                  Row(
+                    children: [
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      const Icon(
+                        Icons.lock,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 15,
+                      ),
+                      Text(
+                        StringRes.profilestitle11,
+                        style: const TextStyle(
+                            color: ColorsRes.green1color,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 20),
+                      ),
+                      const Spacer(),
+                      const Icon(
+                        Icons.edit,
+                        size: 30,
+                        color: ColorsRes.green1color,
+                      ),
+                      const SizedBox(
+                        width: 10,
+                      ),
+                    ],
+                  ),
+                ],
+              );
+            }
+        ),
+      ),
   );
 }
