@@ -30,7 +30,7 @@ class Profiles extends StatelessWidget {
               profiletitle1(),
             ],
           ),
-          Profile(),
+          update(),
         ],
       ),drawer: drawer(),
     //  bottomNavigationBar: editprofile(),

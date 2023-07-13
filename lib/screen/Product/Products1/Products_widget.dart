@@ -2,6 +2,7 @@ import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Product/Products1/Products_controller.dart';
+import 'package:tom_project/screen/Product/product/Product_screen.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
@@ -37,8 +38,8 @@ Widget productadd(){
                 color: ColorsRes.addcolor,
                 child: GestureDetector(
                   onTap: (){
-                    controller.navigetToview();
-                  //  controller.navigetToview(index as String);
+                    //controller.navigetToview();
+                  controller.navigetToview(index as String);
                   },
                   child: ListTile(
                     title: Row(
@@ -109,20 +110,22 @@ Widget add(){
   return GetBuilder<Productscontroller>(
       builder: (controller) => Row(
         children: [
-          IconButton(
-            onPressed: (){
-              controller.add();
-            },
-            icon: const Icon(Icons.add),
-          ),
-         // Text('$controller.counter'),
-          IconButton(
-            onPressed: (){
-              controller.hello();
-            },
-            icon: const Icon(Icons.remove),
-          ),
+         //  IconButton(
+         //    onPressed: (){
+         //      controller.add();
+         //    },
+         //    icon: const Icon(Icons.add),
+         //  ),
+         // // Text('$controller.counter'),
+         //  IconButton(
+         //    onPressed: (){
+         //      controller.hello();
+         //    },
+         //    icon: const Icon(Icons.remove),
+         //  ),
         ],
       ),
   );
 }
+
+

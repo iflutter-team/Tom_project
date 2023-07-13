@@ -4,9 +4,9 @@ import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 import 'package:tom_project/screen/viewproduct/view_product_widget.dart';
 
 class view extends StatelessWidget {
-  //String image;
+  String image;
    view({super.key,
-   //  required this.image
+     required this.image
    });
 
   @override
