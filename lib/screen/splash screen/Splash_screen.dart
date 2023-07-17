@@ -7,11 +7,10 @@ import 'Splash_scrren_controller.dart';
 class SplashPage extends StatelessWidget {
   SplashPage({Key? key}) : super(key: key);
 
- // final SplashController splashController = Get.put(SplashController());
+ final SplashController splashController = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
-    Get.put(SplashController());
     return Scaffold(
       body: Center(
         child: Column(

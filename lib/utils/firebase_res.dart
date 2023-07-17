@@ -1,5 +1,4 @@
 class FirebaseRes{
-  static const adduser="User";
-  static const allSignUpUsersFirebaseKey =  'AllSignUpUsers';
-  static  const signUpUserFirebaseKey =  'signUpUser';
+  static const allSignUpUsersFirebaseKey = 'Users';
+  static const signUpUserFirebaseKey = 'signUpUser';
 }

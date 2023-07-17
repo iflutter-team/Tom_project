@@ -45,15 +45,8 @@ Widget loginBody() {
                 width: 350,
                 child: ElevatedButton(
                     onPressed: () {
-                      if(
-                          controller.email.text.isNotEmpty&&
-                              controller.password.text.isNotEmpty
-                      ){
                         controller.check();
-                       // PrefService.setValue(PrefRes.isSignup, true);
-                      }else{
-                        Get.snackbar("Data is empty","please fill data");
-                      }
+                       PrefService.setValue(PrefRes.isSignUp, true);
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor:  const Color(0xFF227c3e),

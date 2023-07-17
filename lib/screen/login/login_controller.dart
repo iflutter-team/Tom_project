@@ -1,8 +1,10 @@
 
 import 'dart:convert';
 
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/Getdata/GetDataFromFirebase.dart';
 import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
 import 'package:tom_project/services/firebase_service.dart';
 import 'package:tom_project/services/pref_service.dart';
@@ -18,42 +20,81 @@ class LoginController extends GetxController {
   TextEditingController password = TextEditingController();
 
   void goToSignupPage() {
-    Get.off(() => SingupPage());
+    Get.off(SingupPage())!.then((value) {getData();});
   }
 
-  User? loginUser;
-  List<User>? userList;
-  List<User>? allUserList = [];
 
+  List<User>? allUserList = [];
+  List<User>? userList = [];
+  String? loginUserKey ='';
+
+  bool checkUser = false;
+
+  FirebaseDatabase database = FirebaseDatabase.instance;
+
+  @override
+  void onInit() {
+    getData();
+    // TODO: implement onInit
+    super.onInit();
+  }
+
+  Future<void> getData() async {
+    allUserList = await GetDataFromFirebase.getAllSignUpUserFromFirebase();
+  }
 
   Future<void> check() async {
-    Map? allData = await FireBaseService.getAllData(FirebaseRes.adduser);
 
-    List<Map<String, dynamic>> userJsonList = [];
-    if (allData != null) {
-      print(allData);
-      allData.forEach((key, value) {
-        Map<String, dynamic> userData = {};
-        userData['id'] = key;
-        value.forEach((key1, value) {
-          userData[key1.toString()] = value;
-          print(userData);
-        });
-        print(userData);
-        userJsonList.add(userData);
-      });
-      userList = userFromJson(jsonEncode(userJsonList));
-      bool value = userList!.any((element) =>
-      element.email == email.text && element.password == password.text);
+    checkUser = allUserList!.any((element) => element.email == email.text &&
+        element.password == password.text,
+    );
+    int loginUserIndex = allUserList!.indexWhere((element) =>
+    element.email == email.text &&
+        element.password == password.text);
 
-      if (value) {
-        PrefService.setValue(PrefRes.isSignup, true);
-
-        Get.off(() => Bottomhello());
-      } else {
-        Get.snackbar("incorrect details", "Please enter valid details");
-      }
+    if(checkUser){
+      PrefService.setValue(PrefRes.loginUserKey, allUserList![loginUserIndex].id);
+      Get.off(Bottomhello());
+    }else{
+      Get.snackbar("incorrect details", "Please enter valid details");
     }
   }
+
+  Future<void> checkData() async {}
+
+  // User? loginUser;
+  // List<User>? userList;
+  // List<User>? allUserList = [];
+  //
+  //
+  // Future<void> check() async {
+  //   Map? allData = await FireBaseService.getAllData(FirebaseRes.allSignUpUsersFirebaseKey);
+  //
+  //   List<Map<String, dynamic>> userJsonList = [];
+  //   if (allData != null) {
+  //     print(allData);
+  //     allData.forEach((key, value) {
+  //       Map<String, dynamic> userData = {};
+  //       userData['id'] = key;
+  //       value.forEach((key1, value) {
+  //         userData[key1.toString()] = value;
+  //         print(userData);
+  //       });
+  //       print(userData);
+  //       userJsonList.add(userData);
+  //     });
+  //     userList = userFromJson(jsonEncode(userJsonList));
+  //     bool value = userList!.any((element) =>
+  //     element.email == email.text && element.password == password.text);
+  //
+  //     if (value) {
+  //       PrefService.setValue(PrefRes.isSignUp, true);
+  //
+  //       Get.off(() => Bottomhello());
+  //     } else {
+  //       Get.snackbar("incorrect details", "Please enter valid details");
+  //     }
+  //   }
+  // }
 }
 

@@ -14,7 +14,6 @@ class Profiles extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-       // backgroundColor: Colors.white,
         centerTitle: true,
         title: Text(
           StringRes.profilestitle1,
@@ -33,7 +32,7 @@ class Profiles extends StatelessWidget {
           update(),
         ],
       ),drawer: drawer(),
-    //  bottomNavigationBar: editprofile(),
+    bottomNavigationBar: editprofile(),
     );
   }
 }

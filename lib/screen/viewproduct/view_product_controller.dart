@@ -1,7 +1,7 @@
 
 import 'package:get/get.dart';
 
-class viewProductcontroller extends GetxController {
+class ViewProductcontroller extends GetxController {
 
   int counter = 0;
 

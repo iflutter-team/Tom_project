@@ -1,5 +1,4 @@
 import 'package:firebase_database/firebase_database.dart';
-import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Product/Addproduct/Addproduct_screen.dart';
 
@@ -24,9 +23,9 @@ class Productscontroller extends GetxController {
       update(['add']);
   }
 
-  void navigetToview(String index) {
+  void navigetToview(int index) {
     Get.to(
-          () => view(image: index,),
+          () => View(image: index,),
     );
   }
   // void navigetToview( ) {

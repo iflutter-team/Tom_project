@@ -6,20 +6,12 @@ import '../../utils/PrefrenceRes.dart';
 import '../login/Login_screen.dart';
 
 class SplashController extends GetxController {
-
-
   @override
   void onInit() {
-    super.onInit();
-    Login();
-  }
-
-  void Login(){
     Timer(const Duration(seconds: 2), () {
-       bool isLogin = PrefService.getBool(PrefRes.isSignup);
-       Get.off(() => isLogin ? Bottomhello() : LoginPage());
+      bool isLogin = PrefService.getBool(PrefRes.isSignUp);
+      Get.off(() => isLogin ? Bottomhello() : LoginPage());
     });
+    super.onInit();
   }
-
-
 }

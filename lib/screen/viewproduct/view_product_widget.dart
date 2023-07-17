@@ -2,8 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 
+
 Widget viewproduct(){
-  return  GetBuilder<viewProductcontroller>(
+  return  GetBuilder<ViewProductcontroller>(
     builder: (controller) =>  Column(
         children: [
           Container(

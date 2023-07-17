@@ -1,7 +1,7 @@
 class PrefRes {
-  static const isSignup = 'isSignup';
-  static const userList="userList";
-  static const loginUser="LoginUser";
-  static const loginUserKey = "loginUserKey";
-
+  static const isSignUp = 'signUp';
+  static const signUpUser = 'signUpUser';
+  static const signUpUserList = 'signUpUserList';
+  static const loginUser = 'loginUser';
+  static const loginUserKey = 'loginUserKey';
 }

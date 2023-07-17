@@ -1,76 +1,8 @@
-// import 'package:flutter/material.dart';
-// import 'package:tom_project/common/scaffold.dart';
-// import 'package:tom_project/screen/Register/Register_screen_widget.dart';
-// import 'package:get/get.dart';
-//
-// import 'Register_controller.dart';
-//
-// class Registerscreen extends StatelessWidget {
-//   Registerscreen({super.key});
-//   RegisterController registerController = Get.put(RegisterController());
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return SafeArea(
-//       child: Scaffold(
-//         resizeToAvoidBottomInset: false,
-//         body: GestureDetector(
-//           onTap: () {
-//             FocusScope.of(context).unfocus();
-//           },
-//           child: Stack(
-//             children: [
-//               const scaffold(),
-//               Padding(
-//                 padding: const EdgeInsets.all(10.0),
-//                 child: Column(
-//                   mainAxisAlignment: MainAxisAlignment.spaceAround,
-//                   children: [
-//                     Imageregister(),
-//                     Registertitle(),
-//                     const SizedBox(
-//                       height: 10,
-//                     ),
-//                     RegisterTextfiled2(),
-//                     RegisterTextfiled3(),
-//                     RegisterTextfiled4(),
-//                     RegisterTextfiled5(),
-//                     //RegisterTextfiled6(),
-//                     //RegisterTextfiled7(),
-//                     const SizedBox(
-//                       height: 10,
-//                     ),
-//                     Row(
-//                       children: [
-//                         Registercheckbox(),
-//                         Registercheck(),
-//                       ],
-//                     ),
-//                     const SizedBox(
-//                       height: 20,
-//                     ),
-//                     Registernext(),
-//                     Row(
-//                       children: [
-//                         const Padding(padding: EdgeInsets.only(left: 100)),
-//                         Registeraccount(),
-//                         RegisterLogin(),
-//                       ],
-//                     ),
-//                   ],
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../common/scaffold.dart';
+import '../../utils/asset_res.dart';
+import '../../utils/string_res.dart';
 import 'Register_controller.dart';
 import 'Register_screen_widget.dart';
 
@@ -90,7 +22,29 @@ class SingupPage extends StatelessWidget {
           child: Stack(
             children: [
               const scaffold(),
-              signupBoyd()
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Image(
+                    image: AssetImage(ImageRes.register),
+                  ),
+                  Text(
+                    StringRes.Registertitle,
+                    style: const TextStyle(fontSize: 20, color: Colors.green),
+                  ),
+                  const SizedBox(height: 20),
+                  textFieldName(),
+                  const SizedBox(height: 20),
+                  textFieldUserName(),
+                  const SizedBox(height: 20),
+                  textFieldPassword(),
+                  const SizedBox(height: 20),
+                  textFieldMobileNo(),
+                  signUpButton(),
+                  const SizedBox(height: 20),
+                  login(),
+                ],
+              ),
             ],),
         ));
   }
