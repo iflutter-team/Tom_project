@@ -3,18 +3,21 @@ import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 
 
+
 Widget viewproduct(){
   return  GetBuilder<ViewProductcontroller>(
-    builder: (controller) =>  Column(
+    id: 'add',
+    builder: (controller) {
+      return  Column(
         children: [
           Container(
             width: double.infinity,
             height: 250,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              image:  DecorationImage(
+              image: DecorationImage(
                 image:
-               NetworkImage("https://images.unsplash.com/photo-1528821128474-27f963b062bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"),
+                NetworkImage("https://images.unsplash.com/photo-1528821128474-27f963b062bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"),
               ),
             ),
           ),
@@ -61,7 +64,7 @@ Widget viewproduct(){
                 },
                 icon: const Icon(Icons.add),
               ),
-              //Text("$controller.counter"),
+              Text(controller.counter.toString()),
               IconButton(
                 onPressed: (){
                   controller.hello();
@@ -130,8 +133,9 @@ Widget viewproduct(){
           const SizedBox(
             height: 20,
           ),
-       ],
-    ),
+        ],
+      );
+    }
   );
 }
 

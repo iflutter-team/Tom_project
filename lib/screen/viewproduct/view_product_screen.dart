@@ -4,6 +4,7 @@ import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 import 'package:tom_project/screen/viewproduct/view_product_widget.dart';
 
 
+
 class View extends StatelessWidget {
   final int? image;
     View({super.key, this.image});
@@ -14,6 +15,7 @@ class View extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Colors.white,
         body: viewproduct(),
         bottomNavigationBar: cart(),
       ),

@@ -10,21 +10,22 @@ class EditProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Get.put(EditProfileController());
-    return Scaffold(
-      appBar: editProfileAppbar(),
-      body: SingleChildScrollView(
-          child: Column(
-            children: [
-              const SizedBox(height: 20,),
-              textFieldName(),
-              const SizedBox(height: 20,),
-              textFieldUserName(),
-              const SizedBox(height: 20,),
-              textFieldMobileNo(),
-              const SizedBox(height: 20,),
-              editProfileButton(),
-            ],
-          )),
+    return SafeArea(
+      child: Scaffold(
+        appBar: editProfileAppbar(),
+        body: Column(
+          children: [
+            const SizedBox(height: 20,),
+            textFieldName(),
+            const SizedBox(height: 20,),
+            textFieldUserName(),
+            const SizedBox(height: 20,),
+            textFieldMobileNo(),
+            const SizedBox(height: 20,),
+            editProfileButton(),
+          ],
+        ),
+      ),
     );
   }
 }

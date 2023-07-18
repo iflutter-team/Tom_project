@@ -37,9 +37,8 @@ Widget productadd(){
                   color: ColorsRes.addcolor,
                   child: GestureDetector(
                     onTap: () {
-                      //  controller.navigetToview();
                       controller.navigetToview(index);
-              },
+                  },
                     child: ListTile(
                       title: Row(
                         children: [

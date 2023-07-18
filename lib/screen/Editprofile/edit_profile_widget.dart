@@ -45,8 +45,12 @@ Widget textFieldMobileNo() => GetBuilder<EditProfileController>(
     ));
 
 Widget editProfileButton() => GetBuilder<EditProfileController>(
-  builder: (controller) => ElevatedButton(
-    onPressed:()=> controller.onPressedEditProfile(),
-    child: const Text("Edit Profile"),
+  builder: (controller) => SizedBox(
+    height: 35,
+    width: 350,
+    child: ElevatedButton(
+      onPressed:()=> controller.onPressedEditProfile(),
+      child: const Text("Edit Profile"),
+    ),
   ),
 );
