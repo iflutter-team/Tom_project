@@ -10,7 +10,8 @@ class SplashController extends GetxController {
   void onInit() {
     Timer(const Duration(seconds: 2), () {
       bool isLogin = PrefService.getBool(PrefRes.isSignUp);
-      Get.off(() => isLogin ? Bottomhello() : LoginPage());
+      Get.off(Bottomhello());
+      //Get.off(() => isLogin ? Bottomhello() : LoginPage());
     });
     super.onInit();
   }

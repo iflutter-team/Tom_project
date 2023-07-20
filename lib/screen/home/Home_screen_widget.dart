@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/PrivacyPolicy/PrivacyPolicy_screen.dart';
+import 'package:tom_project/screen/Profile/Profile_screen.dart';
 import 'package:tom_project/screen/Terms%20and%20conditions/Termsconditions_screen.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
+import '../BottomNavigationBar1/BottomNavigationBar.dart';
 import '../FAQs/FAQs_screen.dart';
 
 Widget Listtile() {
@@ -837,7 +839,7 @@ Widget drawer() {
                 StringRes.drawer1,
                 style: const TextStyle(color: ColorsRes.green1color),
               ),
-              onTap: () {},
+              onTap: (){},
               leading: const Icon(Icons.keyboard_arrow_down),
             ),
             ListTile(

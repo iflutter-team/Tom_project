@@ -3,25 +3,19 @@ import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 import 'package:tom_project/screen/viewproduct/view_product_widget.dart';
 
-
-
 class View extends StatelessWidget {
-  final int? image;
-    View({super.key, this.image});
-
-  final ViewProductcontroller viewProductcontroller = Get.put(ViewProductcontroller());
+  final int? index;
+  const View({super.key, this.index,});
 
   @override
   Widget build(BuildContext context) {
+    Get.put(ViewProductcontroller(index,));
     return SafeArea(
       child: Scaffold(
         backgroundColor: Colors.white,
-        body: viewproduct(),
+       body: viewproduct(),
         bottomNavigationBar: cart(),
       ),
     );
   }
 }
-
-
-

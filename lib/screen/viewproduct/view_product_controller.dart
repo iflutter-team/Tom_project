@@ -1,11 +1,18 @@
-
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class ViewProductcontroller extends GetxController {
+  int counter = 1;
+  bool value = false;
 
-  int counter = 0;
+  int? index;
+  ViewProductcontroller(this.index,);
 
+  var data = Get.arguments;
+
+  // void like(){
+  //   value!=value;
+  //   update(['like']);
+  // }
 
   void add() {
     counter++;
@@ -14,7 +21,7 @@ class ViewProductcontroller extends GetxController {
   }
 
   void hello() {
-    if (counter != 0) {
+    if (counter != 1) {
       counter--;
       print(counter);
     }

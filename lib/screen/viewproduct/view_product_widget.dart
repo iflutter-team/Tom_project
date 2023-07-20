@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:lottie/lottie.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 
 
@@ -8,7 +9,7 @@ Widget viewproduct(){
   return  GetBuilder<ViewProductcontroller>(
     id: 'add',
     builder: (controller) {
-      return  Column(
+       return Column(
         children: [
           Container(
             width: double.infinity,
@@ -16,19 +17,18 @@ Widget viewproduct(){
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               image: DecorationImage(
-                image:
-                NetworkImage("https://images.unsplash.com/photo-1528821128474-27f963b062bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"),
+                image: NetworkImage(controller.data[0]),
               ),
             ),
           ),
-          const Row(
+           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
               Text(
-                "cherry",
-                style: TextStyle(fontSize: 25, color: Colors.black),
+                'Products:- ${controller.data[1].toString()}',
+                style: const TextStyle(fontSize: 25, color: Colors.black),
               ),
             ],
           ),
@@ -60,22 +60,54 @@ Widget viewproduct(){
               const Spacer(),
               IconButton(
                 onPressed: (){
-                  controller.add();
+                  controller.hello();
                 },
-                icon: const Icon(Icons.add),
+                icon: const Icon(Icons.remove),
               ),
               Text(controller.counter.toString()),
               IconButton(
                 onPressed: (){
-                  controller.hello();
+                  controller.add();
                 },
-                icon: const Icon(Icons.remove),
+                icon: const Icon(Icons.add),
               ),
               const SizedBox(
                 width: 10,
               ),
             ],
           ),
+           Column(
+             children: [
+               Row(
+                children: [
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    'Discount:-   ${controller.data[2].toString()}',
+                    style: const TextStyle(color: Colors.black, fontSize: 20),
+                  ),
+                  const SizedBox(
+                    height: 20,
+                  ),
+                ],
+               ),
+               Row(
+                 children: [
+                   const SizedBox(
+                     width: 10,
+                   ),
+                   Text(
+                     'Stock:-   ${controller.data[3].toString()}',
+                     style:const  TextStyle(color: Colors.black, fontSize: 20),
+                   ),
+                   const SizedBox(
+                     height: 20,
+                   ),
+                 ],
+               ),
+             ],
+           ),
           const SizedBox(
             height: 20,
           ),
@@ -97,7 +129,7 @@ Widget viewproduct(){
             height: 20,
             width: 20,
           ),
-          const Row(
+           const Row(
             children: [
               SizedBox(
                 width: 10,
@@ -105,6 +137,7 @@ Widget viewproduct(){
               Text(
                 "mango Magnifier indica member of the cashew family ",
                 style: TextStyle(color: Colors.black),
+                textAlign: TextAlign.justify,
               ),
             ],
           ),
@@ -130,8 +163,9 @@ Widget viewproduct(){
               ),
             ],
           ),
-          const SizedBox(
-            height: 20,
+          SizedBox(
+            height: 200,
+            child: Lottie.asset('assets/lottie/animation_lkayltyx.json'),
           ),
         ],
       );

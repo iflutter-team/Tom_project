@@ -2,6 +2,7 @@ import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/Product/Products1/Products_controller.dart';
+import 'package:tom_project/screen/Product/Products1/Products_screen.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
 
@@ -37,7 +38,25 @@ Widget productadd(){
                   color: ColorsRes.addcolor,
                   child: GestureDetector(
                     onTap: () {
-                      controller.navigetToview(index);
+                      controller.navigetToview(
+                          index,
+                          snapshot
+                              .child('image')
+                              .value
+                              .toString(),
+                          snapshot
+                              .child('Products')
+                              .value
+                              .toString(),
+                          snapshot
+                              .child('discount')
+                              .value
+                              .toString(),
+                          snapshot
+                              .child("Stock")
+                              .value
+                              .toString(),
+                      );
                   },
                     child: ListTile(
                       title: Row(
@@ -106,7 +125,6 @@ Widget productadd(){
                                   ),
                                 ],
                               ),
-                              add(),
                             ],
                           ),
                         ],
@@ -117,28 +135,6 @@ Widget productadd(){
               }
           ),
         ),
-  );
-}
-
-Widget add(){
-  return GetBuilder<Productscontroller>(
-      builder: (controller) => Row(
-        children: [
-         //  IconButton(
-         //    onPressed: (){
-         //      controller.add();
-         //    },
-         //    icon: const Icon(Icons.add),
-         //  ),
-         // // Text('$controller.counter'),
-         //  IconButton(
-         //    onPressed: (){
-         //      controller.hello();
-         //    },
-         //    icon: const Icon(Icons.remove),
-         //  ),
-        ],
-      ),
   );
 }
 
