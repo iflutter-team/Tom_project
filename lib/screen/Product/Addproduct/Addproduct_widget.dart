@@ -45,11 +45,11 @@ Widget product(){
         },
       ),
       const SizedBox(height: 20),
-      GetBuilder<addproductcontroller>(
-        builder: (controller) {
-          return textFieldCommon(controller.Review, "Review",);
-        },
-      ),
+      // GetBuilder<addproductcontroller>(
+      //   builder: (controller) {
+      //     return textFieldCommon(controller.Review, "Review",);
+      //   },
+      // ),
     ],
   );
 }

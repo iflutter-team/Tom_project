@@ -6,7 +6,8 @@ AppBar appBar = AppBar(
   //leading: appbarIcon(),
   title: appbarimage(),
   actions: [
-    appbarIcon2(),
+    //appbarIcon2(),
     appbarIcon3(),
+    appbarIcon4(),
   ],
 );

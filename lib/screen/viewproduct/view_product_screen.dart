@@ -12,8 +12,20 @@ class View extends StatelessWidget {
     Get.put(ViewProductcontroller(index,));
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            "Products Details"
+          ),
+        ),
         backgroundColor: Colors.white,
-       body: viewproduct(),
+       body: SingleChildScrollView(
+           child: Column(
+             children: [
+               viewproduct(),
+               text(),
+             ],
+           ),
+       ),
         bottomNavigationBar: cart(),
       ),
     );

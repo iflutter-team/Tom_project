@@ -87,13 +87,13 @@ class StringRes {
   static String Textview = "Overview";
   static String Textweek = "Last Week";
   static String Textorder = "Orders";
-  static String Textorder1 = "56";
+  static String Textorder1 = "0";
   static String Textsales = "Total Sales";
-  static String Textsales1 = "\$5467.83";
+  static String Textsales1 = "0";
   static String Textstore = "Store View";
   static String Textstore1 = "378";
   static String Texttotal = "Total Products";
-  static String Texttotal1 = "1,000";
+  static String Texttotal1 = "10";
   static String Textactive = "Active Orders";
   static String Textall = "View All";
 
@@ -252,4 +252,12 @@ class StringRes {
       "For the purpose of understanding OYAYUBI's Personal Data Protection Policy (“Policy”), the capitalized words used in this Policy have the following meanings:";
   static String TermsConditions5 =
       'Applicable Law" means all laws and regulations relating to the protection and / or management of personal data that apply in Indonesia, including but not limited to Law No. 11 of 2018 concerning Information and Electronic Transactions (and its amendments), Government Regulation No. 82 of 2012 concerning Implementation of Electronic Systems and Transactions and Regulation of the Minister of Communication and Information Technology Number 20 of 2016 concerning Protection of Personal Data in Electronic Systems.';
+
+  ///----------------------------Product descrpiton--------------------------------------///
+  static String descrpiton1 =
+      "In a botanical sense, a fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Apricots, bananas,and grapes, as well as bean pods, corn grains, tomatoes, cucumbers, and acorns and almonds, are all technically fruits. Popularly, the term is restricted to the ripened ovaries that are sweet and either succulent or pulpy, such as figs, mangoes,and strawberries.";
+  static String descrpiton2 =
+      "After fertilization, or development without fertilization , changes occur in a flower: the anthers and stigma wither, the petals drop off, and the sepals may be shed or undergo modifications; the ovary enlarges, and the ovules develop into seeds, each containing an embryo plant. The principal purpose of the fruit is the protection and dissemination of the seed.";
+  static String descrpiton3=
+      "fruit, In its strict botanical sense, the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds. Apricots, bananas, grapes, bean pods, corn grains, tomatoes, cucumbers, and acorns are all technically fruits. Popularly, the term is restricted to the ripened ovaries that are sweet and either succulent or pulpy. The principal botanical purpose of the fruit is to protect and spread the seed. There are two broad categories of fruit: fleshy and dry. Fleshy fruits include berries, such as tomatoes, oranges, and blueberries, which consist entirely of succulent tissue; single-seeded drupes, including cherries and plums; aggregate fruits, including blackberries and raspberries, which form from a single flower with many pistils, each of which develops into fruitlets; and multiple fruits, such as pineapples and mulberries, which develop from the mature ovaries of an entire inflorescence. Dry fruits include the legumes, cereal grains, capsules, and nuts. Culinary fruits are important sources of dietary fiber and vitamins. They can be eaten fresh; processed into juices, jams, and jellies; or preserved by dehydration, canning, fermentation, and pickling.";
 }

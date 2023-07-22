@@ -839,7 +839,7 @@ Widget drawer() {
                 StringRes.drawer1,
                 style: const TextStyle(color: ColorsRes.green1color),
               ),
-              onTap: (){},
+              onTap: ()=> Get.to(const Profiles()),
               leading: const Icon(Icons.keyboard_arrow_down),
             ),
             ListTile(

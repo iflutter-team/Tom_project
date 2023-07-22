@@ -38,6 +38,13 @@ Widget appbarIcon3() {
   );
 }
 
+Widget appbarIcon4(){
+  return IconButton(
+      onPressed: (){},
+      icon: const Icon(Icons.shopping_cart,color: ColorsRes.whitecolor,),
+  );
+}
+
 Widget BottomNavigationBar1() {
   return GetBuilder<NavigationBarController>(
     builder: (controller) => BottomNavigationBar(

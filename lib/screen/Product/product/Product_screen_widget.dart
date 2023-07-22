@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tom_project/utils/color_res.dart';
 import 'package:tom_project/utils/string_res.dart';
+
+import '../Products1/Products_controller.dart';
 
 Widget productTextfiled() {
   return Padding(

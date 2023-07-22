@@ -12,33 +12,45 @@ class productscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      initialIndex: 0,
-      length: 2,
-      child: Scaffold(
-        appBar: appBar,
-        body: Column(
-          children: [
-            productTextfiled(),
-            TabBar(padding: EdgeInsets.only(right: 150), tabs: [
-              Text(
-                StringRes.Textproducts,
-                style: TextStyle(color: Colors.green, fontSize: 17),
-              ),
-              Text(
-                StringRes.Textcategory,
-                style: TextStyle(color: Colors.green, fontSize: 17),
-              )
-            ]),
-            const Expanded(
-              child: TabBarView(
-                  clipBehavior: Clip.antiAlias,
-                  children: [Products(), Category1()]),
-            ),
-          ],
-        ),
-        drawer: drawer(),
+    return Scaffold(
+      appBar: appBar,
+      body: Column(
+        children: [
+          productTextfiled(),
+          const Expanded(
+            child: Products(),
+          ),
+        ],
       ),
+      drawer: drawer(),
     );
+    // return DefaultTabController(
+    //   initialIndex: 0,
+    //   length: 2,
+    //   child: Scaffold(
+    //     appBar: appBar,
+    //     body: Column(
+    //       children: [
+    //         productTextfiled(),
+    //         TabBar(padding: EdgeInsets.only(right: 150), tabs: [
+    //           Text(
+    //             StringRes.Textproducts,
+    //             style: TextStyle(color: Colors.green, fontSize: 17),
+    //           ),
+    //           Text(
+    //             StringRes.Textcategory,
+    //             style: TextStyle(color: Colors.green, fontSize: 17),
+    //           )
+    //         ]),
+    //         const Expanded(
+    //           child: TabBarView(
+    //               clipBehavior: Clip.antiAlias,
+    //               children: [Products(), Category1()]),
+    //         ),
+    //       ],
+    //     ),
+    //     drawer: drawer(),
+    //   ),
+    // );
   }
 }

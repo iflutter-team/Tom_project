@@ -4,6 +4,8 @@ import 'package:tom_project/common/appbar_common.dart';
 import 'package:tom_project/screen/home/Home_controller.dart';
 import 'package:tom_project/screen/home/Home_screen_widget.dart';
 
+import '../BottomNavigationBar1/BottomNavigationBar.dart';
+
 class Homescreen extends StatelessWidget {
   const Homescreen({Key? key}) : super(key: key);
 
