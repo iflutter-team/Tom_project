@@ -1,100 +1,52 @@
-// Widget signupBoyd() {
-//   return Padding(
-//       padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
-//       child: GetBuilder<SignupController>(
-//         builder: (controller) {
-//           return Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               const Image(
-//                 image: AssetImage(ImageRes.register),
-//               ),
-//               Text(
-//                 StringRes.Registertitle,
-//                 style: const TextStyle(fontSize: 20, color: Colors.green),
-//               ),
-//               const SizedBox(height: 30),
-//               GetBuilder<SignupController>(
-//                 builder: (controller) {
-//                   return textFieldCommon(controller.name, "Full Name",prefixIcon: const Icon(Icons.account_circle));
-//                 },
-//               ),
-//               const SizedBox(height: 20),
-//               GetBuilder<SignupController>(
-//                 builder: (controller) {
-//                   return textFieldCommon(controller.number, "Number",prefixIcon: const Icon(Icons.phone),);
-//                 },
-//               ),
-//               const SizedBox(height: 30),
-//               GetBuilder<SignupController>(
-//                 builder: (controller) {
-//                   return textFieldCommon(controller.email, "Your Email",prefixIcon: const Icon(Icons.email));
-//                 },
-//               ),
-//               const SizedBox(height: 20),
-//               GetBuilder<SignupController>(
-//                 builder: (controller) {
-//                   return textFieldCommon(controller.password, "Password",prefixIcon: const Icon(Icons.lock));
-//                 },
-//               ),
-//               const SizedBox(
-//                 height: 40,
-//               ),
-//               SizedBox(
-//                 height: 35,
-//                 width: 350,
-//                 child: ElevatedButton(
-//                     onPressed: controller.getData,
-//                     style: ElevatedButton.styleFrom(
-//                       backgroundColor:  const Color(0xFF227c3e),
-//                     ),
-//                   child: Text(
-//                     StringRes.Registeration1,
-//                     style: const TextStyle(color: Colors.white),
-//                   ),
-//                 ),
-//               ),
-//               const SizedBox(height: 10),
-//               Row(
-//                 mainAxisAlignment: MainAxisAlignment.center,
-//                 children: [
-//                   Text(
-//                     StringRes.loginaccount,
-//                     style: const TextStyle(
-//                       fontSize: 15,
-//                       color: Colors.black,
-//                     ),
-//                   ),
-//                   GetBuilder<SignupController>(
-//                     builder: (controller) {
-//                       return TextButton(
-//                           onPressed: ()=> controller.tologin(),
-//                           child: Text(
-//                             StringRes.logintitle1,
-//                           ));
-//                     },
-//                   ),
-//                 ],
-//               ),
-//               const SizedBox(height: 115,),
-//             ],
-//           );
-//         },
-//       ));
-// }
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
+import 'package:lottie/lottie.dart';
 import '../../utils/string_res.dart';
 import 'Register_controller.dart';
 
+Widget Signup(){
+  return GetBuilder<SignupController>(
+      builder: (controller) => Form(
+        key: controller.formKey,
+        child: SafeArea(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                height: 200,
+                child: Lottie.asset('assets/lottie/animation_lkayltyx.json'),
+              ),
+              // const Image(
+              //   image: AssetImage(ImageRes.register),
+              // ),
+              Text(
+                StringRes.Registertitle,
+                style: const TextStyle(fontSize: 20, color: Colors.green),
+              ),
+              const SizedBox(height: 20),
+              textFieldName(),
+              const SizedBox(height: 20),
+              textFieldUserName(),
+              const SizedBox(height: 20),
+              textFieldPassword(),
+              const SizedBox(height: 20),
+              textFieldMobileNo(),
+              signUpButton(),
+              const SizedBox(height: 20),
+              login(),
+            ],
+          ),
+        ),
+      ),
+  );
+}
+
+
+
+
 
 Widget textFieldName() => GetBuilder<SignupController>(
-    builder: (controller) => TextFormField(
-      validator: (value) {
-        if(value!.isNotEmpty) return "Please enter your Name";
-      },
+    builder: (controller) => TextField(
       controller: controller.name,
       decoration: InputDecoration(
         label: const Text("Name"),

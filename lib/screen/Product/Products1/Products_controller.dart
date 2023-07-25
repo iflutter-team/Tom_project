@@ -6,21 +6,35 @@ import '../../viewproduct/view_product_screen.dart';
 
 class Productscontroller extends GetxController {
   DatabaseReference database = FirebaseDatabase.instance.ref("productdata");
-
   int counter = 0;
+  int data = 0;
+  // List productdata = [];
+  //
+  // @override
+  // void onInit() {
+  //   product();
+  //   super.onInit();
+  // }
+  //
+  // Future product() async {
+  //  await database.once().then(
+  //           (value) {
+  //             List temp = value.snapshot.value as List;
+  //             print(temp);
+  //             temp = productdata;
+  //             print(productdata);
+  //           }
+  //   );
+  // }
 
   void add() {
-      counter++;
-      print(counter);
-      update(['add']);
+    counter++;
+    update(['add']);
   }
 
-  void hello() {
-      if (counter != 1) {
-        counter--;
-        print(counter);
-      }
-      update(['add']);
+  void remove() {
+    counter != 0 ? counter-- : counter;
+    update(['add']);
   }
 
 

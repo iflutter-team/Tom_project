@@ -8,6 +8,7 @@ AppBar appBar = AppBar(
   actions: [
     //appbarIcon2(),
     appbarIcon3(),
+    appbarIcon5(),
     appbarIcon4(),
   ],
 );

@@ -1,10 +1,8 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/Getdata/GetDataFromFirebase.dart';
 import 'package:tom_project/model/tom_model.dart';
-
 import '../../services/firebase_service.dart';
 import '../../utils/firebase_res.dart';
 import '../login/Login_screen.dart';
@@ -15,6 +13,43 @@ class SignupController extends GetxController {
   TextEditingController number = TextEditingController();
   TextEditingController password = TextEditingController();
   TextEditingController email = TextEditingController();
+  final formKey = GlobalKey<FormState>();
+  String UserEmail = '';
+  String UserName = '';
+  String UserPassword = '';
+  String UserPhone =  '';
+
+  String? emailValidator(String value) {
+    if (value.isEmpty || !value.contains('@')) {
+      return 'Please enter a valid email.';
+    }
+    return null;
+    update(['Signup']);
+  }
+
+  String? userNameValidator(String value) {
+    if (value.isEmpty) {
+      return 'Please enter a valid name.';
+    }
+    return null;
+    update(['Signup']);
+  }
+
+  String? passwordValidator(String value) {
+    if (value.isEmpty || value.length < 8) {
+      return 'Password must be at least 8 characters long.';
+    }
+    return null;
+    update(['Signup']);
+  }
+
+  String? userPhoneValidator(String value) {
+    if (value.isEmpty) {
+      return 'Please enter a valid Phone.';
+    }
+    return null;
+    update(['Signup']);
+  }
 
 
   List<User>? signUpUserList = [];

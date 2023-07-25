@@ -19,6 +19,10 @@ import '../Register/Register_screen.dart';
 class LoginController extends GetxController {
   TextEditingController email = TextEditingController();
   TextEditingController password = TextEditingController();
+  final formKey = GlobalKey<FormState>();
+  String UserEmail = '';
+  String Userpassword = '';
+
 
   void goToSignupPage() {
     Get.off(SingupPage())!.then((value) {getData();});

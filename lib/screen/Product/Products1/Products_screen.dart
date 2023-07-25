@@ -4,7 +4,8 @@ import 'package:tom_project/screen/Product/Products1/Products_controller.dart';
 import 'package:tom_project/screen/Product/Products1/Products_widget.dart';
 
 class Products extends StatelessWidget {
-  const Products({super.key});
+  final int? index;
+   const Products({super.key, this.index});
 
   @override
   Widget build(BuildContext context) {

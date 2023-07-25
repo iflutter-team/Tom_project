@@ -1,4 +1,3 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
@@ -48,10 +47,6 @@ Widget viewproduct() {
                 ),
               ),
              ),
-            // SizedBox(
-            //   height: 200,
-            //   child: Lottie.asset('assets/lottie/animation_lkayltyx.json'),
-            // ),
           ],
         );
       }
@@ -64,14 +59,36 @@ Widget text() {
     builder: (controller) =>
         Column(
           children: [
-            Row(
+            Column(
               children: [
-                const SizedBox(
-                  width: 10,
-                ),
-                Text(
-                  'Products:- ${controller.data[1].toString()}',
-                  style: const TextStyle(fontSize: 25, color: Colors.black),
+                Row(
+                  children: [
+                    const SizedBox(
+                      width: 10,
+                    ),
+                    Text(
+                      'Products:- ${controller.data[1].toString()}',
+                      style: const TextStyle(fontSize: 20, color: Colors.black),
+                    ),
+                    const Spacer(),
+                    GetBuilder<ViewProductcontroller>(
+                      id: 'like',
+                       builder: (controller) {
+                        return GestureDetector(
+                           onTap: () {
+                             controller.favorite();
+                           },
+                           child: controller.value ? const Icon(
+                             Icons.favorite,
+                             color: Colors.pink,
+                           ) : const Icon(
+                             Icons.favorite_border,
+                             color: Colors.grey,
+                           ),
+                         );
+                       }
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -103,7 +120,7 @@ Widget text() {
                 const Spacer(),
                 IconButton(
                   onPressed: () {
-                    controller.hello();
+                    controller.remove();
                   },
                   icon: const Icon(Icons.remove),
                 ),
@@ -206,6 +223,9 @@ Widget text() {
         ),
   );
 }
+
+
+
 
 
 Widget cart() {

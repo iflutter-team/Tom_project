@@ -2,11 +2,17 @@ import 'package:carousel_slider/carousel_options.dart';
 import 'package:get/get.dart';
 
 class ViewProductcontroller extends GetxController {
-  int counter = 1;
+  int counter = 0;
   int count = 0;
-
   bool value = false;
-  final image = [
+  var data = Get.arguments;
+
+  void favorite(){
+    value =! value;
+    update(['like']);
+  }
+
+  List image = [
     'https://freepngimg.com/thumb/apple/88-png-apple-image-clipart-transparent-png-apple-thumb.png',
     'https://5.imimg.com/data5/SELLER/Default/2022/11/HF/AI/MQ/162935399/green-apple-500x500.jpg',
     'https://freepngimg.com/thumb/orange/4-orange-png-image-download-thumb.png',
@@ -17,25 +23,15 @@ class ViewProductcontroller extends GetxController {
 
   String selectedimage =
       'https://freepngimg.com/thumb/apple/88-png-apple-image-clipart-transparent-png-apple-thumb.png';
-
-
-  int? index;
-  ViewProductcontroller(this.index,);
-
-
-  var data = Get.arguments;
+  String selectedprice = "45.00";
 
   void add() {
     counter++;
-    print(counter);
     update(['add']);
   }
 
-  void hello() {
-    if (counter != 1) {
-      counter--;
-      print(counter);
-    }
+  void remove() {
+    counter != 0 ? counter-- : counter;
     update(['add']);
   }
 }
