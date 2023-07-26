@@ -16,7 +16,7 @@ Widget textFieldName() => GetBuilder<EditProfileController>(
         label: const Text("name"),
         prefixIcon: const Icon(Icons.co_present),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(10),
         ),
       ),
     ));
@@ -28,7 +28,7 @@ Widget textFieldUserName() => GetBuilder<EditProfileController>(
         label: const Text("Email"),
         prefixIcon: const Icon(Icons.email),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(10),
         ),
       ),
     ));
@@ -39,7 +39,7 @@ Widget textFieldMobileNo() => GetBuilder<EditProfileController>(
       decoration: InputDecoration(  label: const Text("Mobile"),
         prefixIcon: const Icon(Icons.phone),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50),
+          borderRadius: BorderRadius.circular(10),
         ),
       ),
     ));

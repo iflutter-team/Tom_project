@@ -6,7 +6,6 @@ import 'package:tom_project/services/pref_service.dart';
 import 'package:tom_project/utils/PrefrenceRes.dart';
 import 'package:tom_project/utils/firebase_res.dart';
 import '../Profile/Profile_controller.dart';
-import '../Profile/Profile_screen.dart';
 
 class EditProfileController extends GetxController {
   TextEditingController name = TextEditingController(

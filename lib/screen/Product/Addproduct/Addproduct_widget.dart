@@ -45,11 +45,11 @@ Widget product(){
         },
       ),
       const SizedBox(height: 20),
-      // GetBuilder<addproductcontroller>(
-      //   builder: (controller) {
-      //     return textFieldCommon(controller.Review, "Review",);
-      //   },
-      // ),
+      GetBuilder<addproductcontroller>(
+        builder: (controller) {
+          return textFieldCommon(controller.stockValue, "stockValue",);
+        },
+      ),
     ],
   );
 }
@@ -67,7 +67,7 @@ Widget addproduct() {
               controller.Stock.text.isNotEmpty&&
               controller.image.text.isNotEmpty&&
               controller.Products.text.isNotEmpty&&
-              controller.Review.text.isNotEmpty
+              controller.stockValue.text.isNotEmpty
           ){
             controller.insertData();
           }else{

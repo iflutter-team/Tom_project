@@ -8,7 +8,7 @@ class addproductcontroller extends GetxController {
   TextEditingController Stock = TextEditingController();
   TextEditingController image = TextEditingController();
   TextEditingController Products = TextEditingController();
-  TextEditingController Review = TextEditingController();
+  TextEditingController stockValue = TextEditingController();
 
   void navigetToProducts() {
     Get.off(
@@ -26,7 +26,7 @@ class addproductcontroller extends GetxController {
       "Stock": Stock.text,
       "image": image.text,
       "Products": Products.text,
-      "Review": Review.text,
+      "stockValue": stockValue.text,
     }).whenComplete(() {
       Get.back();
       update(["newproduct"]);
@@ -34,7 +34,7 @@ class addproductcontroller extends GetxController {
       Stock.clear();
       image.clear();
       Products.clear();
-      Review.clear();
+      stockValue.clear();
     });
   }
 }
