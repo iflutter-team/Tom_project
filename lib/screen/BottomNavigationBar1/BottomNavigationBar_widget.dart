@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigation_controller.dart';
-import 'package:tom_project/screen/Cart/cart_screen.dart';
 import 'package:tom_project/utils/asset_res.dart';
 import 'package:tom_project/utils/color_res.dart';
 
@@ -42,9 +41,7 @@ Widget appbarIcon3() {
 Widget appbarIcon4(){
   return  GetBuilder<NavigationBarController>(
       builder: (controller) => IconButton(
-      onPressed: (){
-        controller.cart();
-      },
+      onPressed: (){},
       icon: const Icon(Icons.shopping_cart,color: ColorsRes.whitecolor,),
   ),
   );

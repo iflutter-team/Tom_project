@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:tom_project/screen/Cart/cart_screen.dart';
 
 class NavigationBarController extends GetxController {
   var tabIndex = 0.obs;
@@ -8,12 +7,10 @@ class NavigationBarController extends GetxController {
     tabIndex.value = index;
     update();
   }
+
   @override
   void dispose() {
     super.dispose();
   }
-
-  void cart(){
-    Get.to(()=> Cart(),);
-  }
 }
+

@@ -1,6 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tom_project/Uploadimage/Upload_image.dart';
 import 'package:tom_project/screen/splash%20screen/Splash_screen.dart';
 import 'package:tom_project/services/pref_service.dart';
 

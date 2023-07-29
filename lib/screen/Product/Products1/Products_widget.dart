@@ -49,13 +49,7 @@ Widget productadd() {
                   color: ColorsRes.addcolor,
                   child: GestureDetector(
                     onTap: () {
-                      controller.navigetToview(
-                        index,
-                        snapshot.child('image').value.toString(),
-                        snapshot.child('Products').value.toString(),
-                        snapshot.child('discount').value.toString(),
-                        snapshot.child("Stock").value.toString(),
-                      );
+
                     },
                     child: ListTile(
                       title: Row(
@@ -98,31 +92,54 @@ Widget productadd() {
                                   Text(data[3].toString()),
                                 ],
                               ),
+                              Row(
+                                children: [
+                                  const Text("Stock Items:-  "),
+                                  Text(data[4].toString()),
+                                ],
+                              ),
                             ],
                           ),
                           const Spacer(),
-                          GetBuilder<Productscontroller>(
-                            id: 'add',
-                            builder: (controller,data[4].toString) {
-                              return Column(
-                                children: [
-                                  IconButton(
-                                    onPressed: () {
-                                      data[4].toString.controller.remove();
-                                    },
-                                    icon: const Icon(Icons.remove),
-                                  ),
-                                  Text(data[4].toString()),
-                                  IconButton(
-                                    onPressed: () {
-                                      controller.add();
-                                    },
-                                    icon: const Icon(Icons.add),
-                                  ),
-                                ],
+                          IconButton(
+                            onPressed: (){
+                              controller.updatedailog(
+                                index,
+                                snapshot.child('image').value.toString(),
+                                snapshot.child('Products').value.toString(),
+                                snapshot.child('discount').value.toString(),
+                                snapshot.child("Stock").value.toString(),
+                                snapshot.child('stockValue').value.toString(),
+                                context,
+                                snapshot.key,
                               );
                             },
+                            icon: const Icon(Icons.edit),
                           ),
+                      //     GetBuilder<Productscontroller>(
+                      //       id: 'add',
+                      //       builder: (controller) {
+                      //         return Column(
+                      //           children: [
+                      //             IconButton(
+                      //               onPressed: () {
+                      //                 var key = snapshot.key;
+                      //                 controller.remove(key);
+                      //               },
+                      //               icon: const Icon(Icons.remove),
+                      //             ),
+                      //             Text(data[4].toString()),
+                      //             IconButton(
+                      //               onPressed: () {
+                      //                 var plus = snapshot.key;
+                      //                 controller.add(plus);
+                      //               },
+                      //               icon: const Icon(Icons.add),
+                      //             ),
+                      //           ],
+                      //         );
+                      //       },
+                      //     ),
                         ],
                       ),
                     ),
@@ -132,3 +149,4 @@ Widget productadd() {
         ),
   );
 }
+

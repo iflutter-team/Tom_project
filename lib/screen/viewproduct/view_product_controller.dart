@@ -14,7 +14,7 @@ class ViewProductcontroller extends GetxController {
   TextEditingController discount = TextEditingController();
   TextEditingController stock = TextEditingController();
   TextEditingController productsdata = TextEditingController();
-
+  TextEditingController stockvalue = TextEditingController();
 
 // void favorite(){
   //   value =! value;

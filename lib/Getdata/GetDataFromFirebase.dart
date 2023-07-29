@@ -9,7 +9,7 @@ class GetDataFromFirebase {
     FirebaseDatabase database = FirebaseDatabase.instance;
 
     DatabaseReference reference =
-    database.ref(FirebaseRes.allSignUpUsersFirebaseKey);
+    database.ref(FirebaseRes.allSignUpUsersFirebaseKey,);
     List<User>? allUserList = [];
     await reference.get().then((value) {
       Map allData = value.value as Map;

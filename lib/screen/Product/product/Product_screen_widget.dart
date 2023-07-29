@@ -17,6 +17,7 @@ Widget productTextfiled() {
       ),
       child: TextField(
         cursorColor: ColorsRes.whitecolor,
+       autofocus: false,
         style: TextStyle(color: ColorsRes.whitecolor),
         decoration: InputDecoration(
           fillColor: ColorsRes.searchcolor,

@@ -27,6 +27,7 @@ class addproductcontroller extends GetxController {
       "image": image.text,
       "Products": Products.text,
       "stockValue": stockValue.text,
+      'id': key,
     }).whenComplete(() {
       Get.back();
       update(["newproduct"]);

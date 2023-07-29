@@ -32,7 +32,7 @@ class Profiles extends StatelessWidget {
           update(),
         ],
       ),drawer: drawer(),
-    //bottomNavigationBar: editprofile(),
+   // bottomNavigationBar: editprofile(),
     );
   }
 }

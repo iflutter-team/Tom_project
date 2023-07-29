@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:get/get.dart';
+import 'package:tom_project/Uploadimage/Upload_image.dart';
 import 'package:tom_project/screen/BottomNavigationBar1/BottomNavigationBar.dart';
 import '../../services/pref_service.dart';
 import '../../utils/PrefrenceRes.dart';
@@ -10,8 +11,8 @@ class SplashController extends GetxController {
   void onInit() {
     Timer(const Duration(seconds: 2), () {
       bool isLogin = PrefService.getBool(PrefRes.isSignUp);
-      Get.off(Bottomhello());
-      //Get.off(() => isLogin ? Bottomhello() : LoginPage());
+      //Get.off(Bottomhello());
+      Get.off(() => isLogin ? Bottomhello() : LoginPage());
     });
     super.onInit();
   }

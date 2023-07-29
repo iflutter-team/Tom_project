@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 import 'package:tom_project/screen/viewproduct/view_product_widget.dart';
 
-class View extends StatelessWidget {
+class Viewscreen extends StatelessWidget {
   final int? index;
-  const View({super.key, this.index,});
+  const Viewscreen({super.key, this.index,});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +21,7 @@ class View extends StatelessWidget {
        body:  SingleChildScrollView(
            child: Column(
              children: [
+               datashowprodct(),
                Edit(),
              ],
            ),

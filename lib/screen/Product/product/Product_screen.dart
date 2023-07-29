@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tom_project/common/appbar_common.dart';
-import 'package:tom_project/screen/Product/Category/Category_screen.dart';
 import 'package:tom_project/screen/Product/product/Product_screen_widget.dart';
 import 'package:tom_project/screen/home/Home_screen_widget.dart';
-import 'package:tom_project/utils/string_res.dart';
 
 import '../Products1/Products_screen.dart';
 

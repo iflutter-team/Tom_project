@@ -229,80 +229,163 @@
 //
 //
 
-
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tom_project/screen/viewproduct/view_product_controller.dart';
 
-Widget Edit(){
+Widget datashowprodct() {
   return GetBuilder<ViewProductcontroller>(
-      builder: (controller) => Padding(
-        padding: const EdgeInsets.all(8.0),
-        child: Column(
-          children: [
-            const SizedBox(height: 15,),
-            TextField(
-              controller: controller.image,
-              decoration: InputDecoration(
-                label:  Text(controller.data[0]),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-            const SizedBox(height: 15,),
-            TextField(
-               controller: controller.discount,
-              decoration: InputDecoration(
-                label:  Text(controller.data[3]),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-            const SizedBox(height: 15,),
-            TextField(
-               controller: controller.stock,
-              decoration: InputDecoration(
-                label: Text(controller.data[2]),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-            const SizedBox(height: 15,),
-            TextField(
-              controller: controller.productsdata,
-              decoration: InputDecoration(
-                label: Text(controller.data[1]),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-            // Container(
-            //   height: 200,
-            //   width: 200,
-            //   decoration: BoxDecoration(
-            //     borderRadius: BorderRadius.circular(15),
-            //     image: DecorationImage(
-            //       image: NetworkImage(controller.data[0]),
-            //     ),
-            //   ),
-            // ),
-          ],
+    builder: (controller) => Column(
+      children: [
+        const SizedBox(
+          height: 30,
         ),
-      ),
+        AnimatedContainer(
+          duration: const Duration(seconds: 1),
+          curve: Curves.fastLinearToSlowEaseIn,
+          height: 250,
+          width: 250,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(15),
+            color: Colors.green,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.green.withOpacity(0.7),
+                blurRadius: 30,
+              ),
+            ]
+          ),
+          child: Column(
+            children: [
+              const SizedBox(height: 20,),
+              Container(
+                height: 100,
+                width: 100,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15),
+                  image:
+                      DecorationImage(image: NetworkImage(controller.data[0])),
+                  color: Colors.white,
+                ),
+              ),
+              const SizedBox(height: 20),
+              Row(
+                children: [
+                  const SizedBox(width: 65,),
+                  const Text("Products:-  ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  Text(controller.data[1],style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                children: [
+                  const SizedBox(width: 65,),
+                  const Text("Discount:-  ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  Text(controller.data[2],style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                children: [
+                  const SizedBox(width: 65,),
+                  const Text("Stock:-  ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  Text(controller.data[3],style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                ],
+              ),
+              const SizedBox(height: 10,),
+              Row(
+                children: [
+                  const SizedBox(width: 65,),
+                  const Text("Stock Item:-  ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                  Text(controller.data[4],style: const TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                ],
+              ),
+
+            ],
+          ),
+        ),
+      ],
+    ),
   );
 }
 
+
+Widget Edit() {
+  return GetBuilder<ViewProductcontroller>(
+    builder: (controller) => Padding(
+      padding: const EdgeInsets.all(8.0),
+      child: Column(
+        children: [
+          const SizedBox(
+            height: 15,
+          ),
+          TextField(
+            controller: controller.image,
+            decoration: InputDecoration(
+              label: const Text('image'),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          TextField(
+            controller: controller.discount,
+            decoration: InputDecoration(
+              label: const Text('discount'),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          TextField(
+            controller: controller.stock,
+            decoration: InputDecoration(
+              label: const Text('stock'),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+          const SizedBox(
+            height: 15,
+          ),
+          TextField(
+            controller: controller.productsdata,
+            decoration: InputDecoration(
+              label: const Text('productsdata'),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),const SizedBox(
+            height: 15,
+          ),
+          TextField(
+            controller: controller.stockvalue,
+            decoration: InputDecoration(
+              label: const Text('stockvalue'),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+          ),
+        ],
+      ),
+    ),
+  );
+}
 
 
 Widget cart() {
   return GetBuilder<ViewProductcontroller>(
     id: 'update',
-    builder: (controller) =>  MaterialButton(
+    builder: (controller) => MaterialButton(
       color: Colors.green,
       minWidth: 500,
       onPressed: () {
